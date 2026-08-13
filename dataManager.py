@@ -233,20 +233,13 @@ class DataManager:
         # -------------------------
 
         try:
-            with open(
+            self.save_json(
                 "data/tracks.json",
-                "w",
-                encoding="utf-8"
-            ) as f:
-
-                json.dump(
-                    {
-                        str(track_id): track.to_dict()
-                        for track_id, track in self.tracks.items()
-                    },
-                    f,
-                    indent=4
-                )
+                {
+                    str(track_id): track.to_dict()
+                    for track_id, track in self.tracks.items()
+                }
+            )
 
             print(f"Saved {len(self.tracks)} tracks.")
 
@@ -258,20 +251,13 @@ class DataManager:
         # -------------------------
 
         try:
-            with open(
+            self.save_json(
                 "data/players.json",
-                "w",
-                encoding="utf-8"
-            ) as f:
-
-                json.dump(
-                    {
-                        uuid: player.to_dict()
-                        for uuid, player in self.players.items()
-                    },
-                    f,
-                    indent=4
-                )
+                {
+                    uuid: player.to_dict()
+                    for uuid, player in self.players.items()
+                }
+            )
 
             print(f"Saved {len(self.players)} players.")
 
@@ -283,20 +269,13 @@ class DataManager:
         # -------------------------
 
         try:
-            with open(
+            self.save_json(
                 "data/import_errors.json",
-                "w",
-                encoding="utf-8"
-            ) as f:
-
-                json.dump(
-                    {
-                        "tracks": self.failed_tracks,
-                        "players": self.failed_players
-                    },
-                    f,
-                    indent=4
-                )
+                {
+                    "tracks": self.failed_tracks,
+                    "players": self.failed_players
+                }
+            )
 
         except Exception as e:
             print(
@@ -332,3 +311,22 @@ class DataManager:
         print("========================================")
 
         self.save()
+
+
+    def save_json(self, path, data):
+        temp_path = path + ".tmp"
+
+        try:
+            with open(temp_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4)
+
+            if os.path.exists(path):
+                os.replace(path, path + ".bak")
+
+            os.replace(temp_path, path)
+
+        except Exception:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
+
+            raise
