@@ -17,9 +17,23 @@ class Player:
         self.boat_type = data.get("boat_type")
         self.boat_material = data.get("boat_material")
         self.bukkit_color = data.get("bukkit_color")
+        self.hex_color = data.get("hex_color")
 
     def to_dict(self):
-        return self.__dict__
+        return {
+            "uuid": self.uuid,
+            "name": self.name,
+            "display_name": self.display_name,
+            "color_code": self.color_code,
+            "hex_color": self.hex_color,
+            "boat_type": self.boat_type,
+            "boat_material": self.boat_material,
+            "bukkit_color": self.bukkit_color
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(data)
 
 
 class Performance:
@@ -31,7 +45,25 @@ class Performance:
         self.position = None
 
     def to_dict(self):
-        return self.__dict__
+        return {
+            "player_uuid": self.player_uuid,
+            "track_id": self.track_id,
+            "time": self.time,
+            "date": self.date,
+            "position": self.position
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        performance = cls.__new__(cls)
+
+        performance.player_uuid = data["player_uuid"]
+        performance.track_id = data["track_id"]
+        performance.time = data["time"]
+        performance.date = data["date"]
+        performance.position = data["position"]
+
+        return performance
 
 class Track:
     def __init__(self, data, source):
@@ -70,4 +102,40 @@ class Track:
             performance.position = position
 
     def to_dict(self):
-        return self.__dict__
+        return {
+            "source": self.source,
+            "id": self.id,
+            "command_name": self.command_name,
+            "display_name": self.display_name,
+            "type": self.type,
+            "attempts": self.attempts,
+            "finishes": self.finishes,
+            "time_spent": self.time_spent,
+            "weight": self.weight,
+            "leaderboard": [
+                performance.to_dict()
+                for performance in self.leaderboard
+            ]
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        track = cls.__new__(cls)
+
+        track.source = data["source"]
+        track.id = data["id"]
+        track.server_id = data["server_id"]
+        track.command_name = data["command_name"]
+        track.display_name = data["display_name"]
+        track.type = data["type"]
+        track.attempts = data["attempts"]
+        track.finishes = data["finishes"]
+        track.time_spent = data["time_spent"]
+        track.weight = data["weight"]
+
+        track.leaderboard = [
+            Performance.from_dict(performance)
+            for performance in data.get("leaderboard", [])
+        ]
+
+        return track
