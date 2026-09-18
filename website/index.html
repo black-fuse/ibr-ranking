@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IBR Tiers</title>
+</head>
+
+<body>
+
+    <h1>IBR Tiers</h1>
+
+    <div id="rankings">
+        Loading...
+    </div>
+
+    <script>
+
+        async function loadRankings() {
+
+            const response = await fetch("data/rankings.json");
+            const rankings = await response.json();
+
+            const container = document.getElementById("rankings");
+
+            container.innerHTML = "";
+
+            rankings.forEach(player => {
+
+                const playerElement = document.createElement("div");
+
+                playerElement.textContent =
+                    `${player.rank}. ${player.name}`;
+
+                container.appendChild(playerElement);
+            });
+        }
+
+        loadRankings();
+
+    </script>
+
+</body>
+
+</html>

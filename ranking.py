@@ -326,3 +326,55 @@ class RankingSystem:
                 return position
 
         return None
+
+    def export_json(self, output_path="website/data/rankings.json"):
+
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        rankings = self.rankings()
+
+        data = []
+
+        for rank, stats in enumerate(rankings, start=1):
+
+            data.append({
+                "rank": rank,
+                "uuid": stats.uuid,
+                "name": self.get_name(stats.uuid),
+
+                "score": round(stats.score, 2),
+
+                "performances": stats.performances,
+                "tracks": len(stats.tracks),
+                "coverage": round(stats.coverage, 2),
+
+                "track_records": stats.track_records,
+                "podiums": stats.podiums,
+                "top_5": stats.top_5,
+                "top_10": stats.top_10,
+
+                "average_position": (
+                    round(stats.average_position, 2)
+                    if stats.average_position is not None
+                    else None
+                ),
+
+                "best_position": stats.best_position,
+
+                "best_time": (
+                    round(stats.best_time, 3)
+                    if stats.best_time is not None
+                    else None
+                )
+            })
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4)
+
+        print(
+            f"[INFO] Exported {len(data)} players to {output_path}"
+        )
+
+ranking = RankingSystem()
+
+ranking.export_json()
