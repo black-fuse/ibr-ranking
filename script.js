@@ -1,6 +1,6 @@
 async function loadRankings() {
 
-    const response = await fetch("data/rankings.json");
+    const response = await fetch("website/data/rankings.json");
     const rankings = await response.json();
 
     const container = document.getElementById("board-container");
