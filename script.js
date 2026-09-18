@@ -7,7 +7,9 @@ async function loadRankings() {
 
     container.innerHTML = "";
 
-    rankings.forEach(player => {
+    for (const playerData of rankings) {
+
+        const player = await fixPlayerName(playerData);
 
         const widget = document.createElement("div");
         widget.className = "player-widget";
@@ -31,7 +33,6 @@ async function loadRankings() {
         name.textContent = player.name;
         score.textContent = `${player.score} points`;
 
-        // Temporary skin placeholder
         skin.src = "https://mc-heads.net/avatar/" + player.uuid + "/50";
 
         widget.appendChild(rank);
@@ -40,7 +41,7 @@ async function loadRankings() {
         widget.appendChild(score);
 
         container.appendChild(widget);
-    });
+    }
 }
 
 function getTier(rank) {
@@ -53,6 +54,30 @@ function getTier(rank) {
     if (rank <= 10000) return "copper";
 
     return "stone";
+}
+
+async function fixPlayerName(player) {
+    if (player.name === player.uuid) {
+        player.name = await mojangUuidToUsername(player.uuid);
+    }
+
+    return player;
+}
+
+async function mojangUuidToUsername(uuid) {
+    const cleanUuid = uuid.replace(/-/g, "");
+
+    const response = await fetch(
+        `https://sessionserver.mojang.com/session/minecraft/profile/${cleanUuid}`
+    );
+
+    if (!response.ok) {
+        return uuid;
+    }
+
+    const data = await response.json();
+
+    return data.name;
 }
 
 loadRankings();
