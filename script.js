@@ -7,9 +7,7 @@ async function loadRankings() {
 
     container.innerHTML = "";
 
-    for (const playerData of rankings) {
-
-        const player = await fixPlayerName(playerData);
+    rankings.forEach(player => {
 
         const widget = document.createElement("div");
         widget.className = "player-widget";
@@ -33,6 +31,7 @@ async function loadRankings() {
         name.textContent = player.name;
         score.textContent = `${player.score} points`;
 
+        // Temporary skin placeholder
         skin.src = "https://mc-heads.net/avatar/" + player.uuid + "/50";
 
         widget.appendChild(rank);
@@ -41,7 +40,7 @@ async function loadRankings() {
         widget.appendChild(score);
 
         container.appendChild(widget);
-    }
+    });
 }
 
 function getTier(rank) {
