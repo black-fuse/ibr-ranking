@@ -6,41 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>IBR Tiers</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>IBR Tiers</h1>
+    <header>
+        <h1>IBR TIERS</h1>
+    </header>
 
-    <div id="rankings">
+    <!-- Leaderboard selector -->
+    <nav id="board-selector">
+        <button class="board-button active">IBR Tiers</button>
+        <button class="board-button">Leaderboard 2</button>
+        <button class="board-button">Leaderboard 3</button>
+    </nav>
+
+    <!-- The currently selected board goes here -->
+    <main id="board-container">
         Loading...
-    </div>
+    </main>
 
-    <script>
-
-        async function loadRankings() {
-
-            const response = await fetch("data/rankings.json");
-            const rankings = await response.json();
-
-            const container = document.getElementById("rankings");
-
-            container.innerHTML = "";
-
-            rankings.forEach(player => {
-
-                const playerElement = document.createElement("div");
-
-                playerElement.textContent =
-                    `${player.rank}. ${player.name}`;
-
-                container.appendChild(playerElement);
-            });
-        }
-
-        loadRankings();
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
