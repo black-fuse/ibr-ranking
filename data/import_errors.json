@@ -2,96 +2,84 @@
     "tracks": [],
     "players": [
         {
-            "uuid": "03356961-960b-43d2-8b8b-2c8b5a21f9f6",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/03356961-960b-43d2-8b8b-2c8b5a21f9f6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "8e4541f2-743e-4545-8d1b-4a3f76a8ab45",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8e4541f2-743e-4545-8d1b-4a3f76a8ab45?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "169a04ec-70b8-4b74-863c-9f3cbf117fcb",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/169a04ec-70b8-4b74-863c-9f3cbf117fcb?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         },
         {
             "uuid": "8ab5543d-084f-4bfc-8a66-c20f978e0f32",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8ab5543d-084f-4bfc-8a66-c20f978e0f32?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "80f0e1e9-92e3-4cd1-920a-c3d21a77a128",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/80f0e1e9-92e3-4cd1-920a-c3d21a77a128?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "fe115ad1-d69b-4577-82c8-1282ceaa793c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/fe115ad1-d69b-4577-82c8-1282ceaa793c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "5ab466ca-a439-4fc8-b173-0d9d3e7348a6",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/5ab466ca-a439-4fc8-b173-0d9d3e7348a6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "874fa94a-f0cc-429a-88f3-479daaaaa67b",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/874fa94a-f0cc-429a-88f3-479daaaaa67b?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "71a30300-9664-4c0b-95d4-80398c05e935",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/71a30300-9664-4c0b-95d4-80398c05e935?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "b4437d2a-8dd0-4b71-8eb6-087a1753dbbd",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b4437d2a-8dd0-4b71-8eb6-087a1753dbbd?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "2519dada-fb20-42e2-9431-8f2997119bb8",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/2519dada-fb20-42e2-9431-8f2997119bb8?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/8ab5543d-084f-4bfc-8a66-c20f978e0f32?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         },
         {
             "uuid": "4651f475-ebe4-4388-8f63-051e00617a57",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4651f475-ebe4-4388-8f63-051e00617a57?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "11bec74a-f06c-4ff4-9f35-8c1733ecefa9",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/11bec74a-f06c-4ff4-9f35-8c1733ecefa9?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "35a4307b-6d82-43cf-b69c-67cb5076b228",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/35a4307b-6d82-43cf-b69c-67cb5076b228?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
             "uuid": "b5120402-f5bf-4f33-b965-1c5f79f5f66e",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b5120402-f5bf-4f33-b965-1c5f79f5f66e?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "b4437d2a-8dd0-4b71-8eb6-087a1753dbbd",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b4437d2a-8dd0-4b71-8eb6-087a1753dbbd?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "0bb4ffaf-c666-430f-8943-e9a9eafe6b49",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/0bb4ffaf-c666-430f-8943-e9a9eafe6b49?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "80f0e1e9-92e3-4cd1-920a-c3d21a77a128",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/80f0e1e9-92e3-4cd1-920a-c3d21a77a128?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "648800e0-b4a7-46de-a6e5-6fea676dad5f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/648800e0-b4a7-46de-a6e5-6fea676dad5f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "874fa94a-f0cc-429a-88f3-479daaaaa67b",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/874fa94a-f0cc-429a-88f3-479daaaaa67b?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "bdcbe645-e859-4980-8994-454431b8635f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/bdcbe645-e859-4980-8994-454431b8635f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "fe115ad1-d69b-4577-82c8-1282ceaa793c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/fe115ad1-d69b-4577-82c8-1282ceaa793c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "03356961-960b-43d2-8b8b-2c8b5a21f9f6",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/03356961-960b-43d2-8b8b-2c8b5a21f9f6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "71a30300-9664-4c0b-95d4-80398c05e935",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/71a30300-9664-4c0b-95d4-80398c05e935?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "b7d3836f-ac54-4bd5-890f-2d6963b5a23c",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b7d3836f-ac54-4bd5-890f-2d6963b5a23c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "88df759c-1c07-4b44-bb72-1c42fcc9eea6",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/88df759c-1c07-4b44-bb72-1c42fcc9eea6?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "2519dada-fb20-42e2-9431-8f2997119bb8",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/2519dada-fb20-42e2-9431-8f2997119bb8?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "6388c81e-b68c-4ebe-84a1-603a3b280ee8",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/6388c81e-b68c-4ebe-84a1-603a3b280ee8?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "acba33c9-adcd-43a3-98a5-690e06a43bcd",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/acba33c9-adcd-43a3-98a5-690e06a43bcd?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "169a04ec-70b8-4b74-863c-9f3cbf117fcb",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/169a04ec-70b8-4b74-863c-9f3cbf117fcb?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         }
     ]
 }

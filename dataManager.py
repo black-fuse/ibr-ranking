@@ -2,6 +2,8 @@ import json
 import os
 
 import sources.frosthex.frosthex as frosthex
+import sources.brwc.brwc as brwc
+
 from models import Track, Player
 
 from tqdm import tqdm
@@ -10,25 +12,23 @@ from tqdm import tqdm
 class DataManager:
 
     def __init__(self):
+
+        # All data sources
+        self.sources = [
+            ("frosthex", frosthex),
+            ("brwc", brwc),
+        ]
+
         self.tracks = {}
         self.players = {}
 
         self.failed_tracks = []
         self.failed_players = []
 
-    # =========================================================
-    # CACHE LOADING
-    # =========================================================
 
     def load_cache(self):
-        """
-        Load existing cached data from disk.
-        """
 
-        # -------------------------
         # Players
-        # -------------------------
-
         if os.path.exists("data/players.json"):
             try:
                 with open("data/players.json", "r", encoding="utf-8") as f:
@@ -37,6 +37,7 @@ class DataManager:
                 for uuid, player_data in data.items():
                     try:
                         self.players[uuid] = Player.from_dict(player_data)
+
                     except Exception as e:
                         print(
                             f"[WARN] Failed to load cached player "
@@ -51,10 +52,8 @@ class DataManager:
         else:
             print("No player cache found.")
 
-        # -------------------------
-        # Tracks
-        # -------------------------
 
+        # Tracks
         if os.path.exists("data/tracks.json"):
             try:
                 with open("data/tracks.json", "r", encoding="utf-8") as f:
@@ -76,69 +75,83 @@ class DataManager:
             except Exception as e:
                 print(f"[WARN] Failed to load tracks cache: {e}")
 
+
     # =========================================================
     # TRACKS
     # =========================================================
 
     def load_tracks(self):
 
-        # Get current track list
-        try:
-            tracklist = frosthex.get_tracks()
-            track_names = tracklist["track_command_names"]
+        for source_name, source in self.sources:
 
-        except Exception as e:
-            print(f"[ERROR] Failed to retrieve track list: {e}")
-            return
+            print(f"\n--- Loading tracks from {source_name} ---")
 
-        print(f"Frosthex currently has {len(track_names)} tracks.")
-
-        # Figure out which tracks we already have
-        cached_commands = {
-            track.command_name
-            for track in self.tracks.values()
-            if track.source == "frosthex"
-        }
-
-        new_tracks = [
-            command_name
-            for command_name in track_names
-            if command_name not in cached_commands
-        ]
-
-        print(f"Cached tracks: {len(cached_commands)}")
-        print(f"New tracks: {len(new_tracks)}")
-
-        # Nothing to download
-        if not new_tracks:
-            print("No new tracks to load.")
-
-        # Download new tracks
-        for command_name in tqdm(
-            new_tracks,
-            desc="Loading new tracks",
-            unit="track"
-        ):
             try:
-                data = frosthex.get_track(command_name)
-
-                track = Track(data, "frosthex")
-
-                self.tracks[track.id] = track
+                tracklist = source.get_tracks()
+                track_names = tracklist["track_command_names"]
 
             except Exception as e:
                 print(
-                    f"\n[WARN] Failed to load track "
-                    f"{command_name}: {e}"
+                    f"[ERROR] Failed to retrieve {source_name} "
+                    f"track list: {e}"
                 )
+                continue
 
-                self.failed_tracks.append({
-                    "command_name": command_name,
-                    "error": str(e)
-                })
+            print(
+                f"{source_name} currently has "
+                f"{len(track_names)} tracks."
+            )
+
+            # Tracks already cached from this source
+            cached_commands = {
+                track.command_name
+                for track in self.tracks.values()
+                if track.source == source_name
+            }
+
+            new_tracks = [
+                command_name
+                for command_name in track_names
+                if command_name not in cached_commands
+            ]
+
+            print(f"Cached tracks: {len(cached_commands)}")
+            print(f"New tracks: {len(new_tracks)}")
+
+            if not new_tracks:
+                print("No new tracks to load.")
+                continue
+
+            # Download new tracks
+            for command_name in tqdm(
+                new_tracks,
+                desc=f"Loading {source_name} tracks",
+                unit="track"
+            ):
+
+                try:
+                    data = source.get_track(command_name)
+
+                    track = Track(data, source_name)
+
+                    self.tracks[track.id] = track
+
+                except Exception as e:
+                    print(
+                        f"\n[WARN] Failed to load "
+                        f"{source_name} track "
+                        f"{command_name}: {e}"
+                    )
+
+                    self.failed_tracks.append({
+                        "source": source_name,
+                        "command_name": command_name,
+                        "error": str(e)
+                    })
 
         print(f"\nTotal tracks: {len(self.tracks)}")
         print(f"Failed tracks: {len(self.failed_tracks)}")
+
 
     # =========================================================
     # PLAYERS
@@ -146,15 +159,23 @@ class DataManager:
 
     def load_missing_players(self):
 
-        # Find every player referenced by our tracks
-        player_uuids = set()
+        # UUID -> source
+        player_sources = {}
 
+        # Find every player referenced by our tracks
         for track in self.tracks.values():
+
             try:
                 for performance in track.leaderboard:
-                    player_uuids.add(performance.player_uuid)
+
+                    uuid = performance.player_uuid
+
+                    # Remember where we found this player
+                    if uuid not in player_sources:
+                        player_sources[uuid] = track.source
 
             except Exception as e:
+
                 print(
                     f"\n[WARN] Failed to read leaderboard "
                     f"for track {track.id}: {e}"
@@ -163,13 +184,24 @@ class DataManager:
         # Compare against cache
         missing_players = [
             uuid
-            for uuid in player_uuids
+            for uuid in player_sources
             if uuid not in self.players
         ]
 
-        print(f"Players referenced by tracks: {len(player_uuids)}")
-        print(f"Players already cached: {len(self.players)}")
-        print(f"Players missing: {len(missing_players)}")
+        print(
+            f"Players referenced by tracks: "
+            f"{len(player_sources)}"
+        )
+
+        print(
+            f"Players already cached: "
+            f"{len(self.players)}"
+        )
+
+        print(
+            f"Players missing: "
+            f"{len(missing_players)}"
+        )
 
         # Nothing to download
         if not missing_players:
@@ -182,10 +214,17 @@ class DataManager:
             desc="Loading missing players",
             unit="player"
         ):
+
             try:
-                self.get_or_create_player(uuid)
+                source_name = player_sources[uuid]
+
+                self.get_or_create_player(
+                    uuid,
+                    source_name
+                )
 
             except Exception as e:
+
                 print(
                     f"\n[WARN] Failed to load player "
                     f"{uuid}: {e}"
@@ -199,22 +238,27 @@ class DataManager:
         print(f"\nTotal players: {len(self.players)}")
         print(f"Failed players: {len(self.failed_players)}")
 
+
     # =========================================================
     # PLAYER FETCHING
     # =========================================================
 
-    def get_or_create_player(self, uuid):
+    def get_or_create_player(self, uuid, source_name):
 
         if uuid in self.players:
             return self.players[uuid]
 
-        data = frosthex.get_player(uuid)
+        # Find the requested source
+        source = dict(self.sources)[source_name]
+
+        data = source.get_player(uuid)
 
         player = Player(data)
 
         self.players[uuid] = player
 
         return player
+
 
     # =========================================================
     # SAVE
@@ -224,14 +268,15 @@ class DataManager:
 
         try:
             os.makedirs("data", exist_ok=True)
+
         except Exception as e:
-            print(f"[ERROR] Failed to create data directory: {e}")
+            print(
+                f"[ERROR] Failed to create data directory: {e}"
+            )
             return
 
-        # -------------------------
-        # Tracks
-        # -------------------------
 
+        # Tracks
         try:
             self.save_json(
                 "data/tracks.json",
@@ -246,10 +291,8 @@ class DataManager:
         except Exception as e:
             print(f"[ERROR] Failed to save tracks: {e}")
 
-        # -------------------------
-        # Players
-        # -------------------------
 
+        # Players
         try:
             self.save_json(
                 "data/players.json",
@@ -264,10 +307,8 @@ class DataManager:
         except Exception as e:
             print(f"[ERROR] Failed to save players: {e}")
 
-        # -------------------------
-        # Errors
-        # -------------------------
 
+        # Errors
         try:
             self.save_json(
                 "data/import_errors.json",
@@ -282,6 +323,7 @@ class DataManager:
                 f"[WARN] Failed to save import errors: {e}"
             )
 
+
     # =========================================================
     # FULL IMPORT
     # =========================================================
@@ -294,17 +336,20 @@ class DataManager:
 
         self.load_cache()
 
+
         print("\n========================================")
         print(" Updating tracks")
         print("========================================")
 
         self.load_tracks()
 
+
         print("\n========================================")
         print(" Updating players")
         print("========================================")
 
         self.load_missing_players()
+
 
         print("\n========================================")
         print(" Saving")
@@ -313,19 +358,41 @@ class DataManager:
         self.save()
 
 
+    # =========================================================
+    # JSON
+    # =========================================================
+
     def save_json(self, path, data):
+
         temp_path = path + ".tmp"
 
         try:
-            with open(temp_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=4)
+
+            with open(
+                temp_path,
+                "w",
+                encoding="utf-8"
+            ) as f:
+
+                json.dump(
+                    data,
+                    f,
+                    indent=4
+                )
 
             if os.path.exists(path):
-                os.replace(path, path + ".bak")
+                os.replace(
+                    path,
+                    path + ".bak"
+                )
 
-            os.replace(temp_path, path)
+            os.replace(
+                temp_path,
+                path
+            )
 
         except Exception:
+
             if os.path.exists(temp_path):
                 os.remove(temp_path)
 
