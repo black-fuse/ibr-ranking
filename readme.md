@@ -1,1 +1,1 @@
-im vibing i'll update this later
+currently running on frosthex event and brwc tt data

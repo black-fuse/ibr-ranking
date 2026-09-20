@@ -46,11 +46,15 @@ class PlayerStats:
 
 
 class RankingSystem:
-    def __init__(self, tracks_path="data/tracks.json",
-                 players_path="data/players.json"):
-
+    def __init__(
+        self,
+        tracks_path="data/tracks.json",
+        players_path="data/players.json",
+        source=None
+    ):
         self.tracks_path = tracks_path
         self.players_path = players_path
+        self.source = source
 
         self.tracks = {}
         self.players = {}
@@ -100,9 +104,16 @@ class RankingSystem:
     def calculate_stats(self):
         self.stats = {}
 
-        total_tracks = len(self.tracks)
+        # Only tracks belonging to this ranking
+        ranking_tracks = {
+            track_id: track
+            for track_id, track in self.tracks.items()
+            if self.source is None or track.get("source") == self.source
+        }
 
-        for track_id, track in self.tracks.items():
+        total_tracks = len(ranking_tracks)
+
+        for track_id, track in ranking_tracks.items():
 
             leaderboard = track.get("leaderboard", [])
 
@@ -118,8 +129,6 @@ class RankingSystem:
 
                 stats = self.stats[uuid]
 
-                # Use saved position if available,
-                # otherwise derive it from leaderboard order.
                 position = performance.get("position")
 
                 if position is None:
@@ -137,7 +146,6 @@ class RankingSystem:
                     except (ValueError, TypeError):
                         pass
 
-                # Track achievements
                 if position == 1:
                     stats.track_records += 1
 
@@ -150,7 +158,6 @@ class RankingSystem:
                 if position <= 10:
                     stats.top_10 += 1
 
-        # Calculate coverage
         for stats in self.stats.values():
 
             stats.coverage = (
@@ -378,3 +385,13 @@ class RankingSystem:
 ranking = RankingSystem()
 
 ranking.export_json()
+
+frosthex_ranking = RankingSystem(source="frosthex")
+frosthex_ranking.export_json(
+    "website/data/rankings_frosthex.json"
+)
+
+brwc_ranking = RankingSystem(source="brwc")
+brwc_ranking.export_json(
+    "website/data/rankings_brwc.json"
+)

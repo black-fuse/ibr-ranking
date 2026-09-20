@@ -1,13 +1,25 @@
-async function loadRankings() {
+const boards = {
+    frosthex: "website/data/rankings_frosthex.json",
+    brwc: "website/data/rankings_brwc.json",
+    all: "website/data/rankings.json"
+};
 
-    const response = await fetch("website/data/rankings.json");
+
+async function loadRankings(board) {
+
+    const response = await fetch(boards[board]);
+
+    if (!response.ok) {
+        throw new Error(`Failed to load ${boards[board]}`);
+    }
+
     const rankings = await response.json();
 
     const container = document.getElementById("board-container");
 
     container.innerHTML = "";
 
-    rankings.forEach(player => {
+    for (const player of rankings) {
 
         const widget = document.createElement("div");
         widget.className = "player-widget";
@@ -28,11 +40,15 @@ async function loadRankings() {
 
         rank.textContent = player.rank;
         rank.classList.add(tier);
+
         name.textContent = player.name;
+
         score.textContent = `${player.score} points`;
 
-        // Temporary skin placeholder
-        skin.src = "https://mc-heads.net/avatar/" + player.uuid + "/50";
+        skin.src =
+            "https://mc-heads.net/avatar/"
+            + player.uuid
+            + "/50";
 
         widget.appendChild(rank);
         widget.appendChild(skin);
@@ -40,8 +56,9 @@ async function loadRankings() {
         widget.appendChild(score);
 
         container.appendChild(widget);
-    });
+    }
 }
+
 
 function getTier(rank) {
 
@@ -55,7 +72,9 @@ function getTier(rank) {
     return "stone";
 }
 
+
 async function fixPlayerName(player) {
+
     if (player.name === player.uuid) {
         player.name = await mojangUuidToUsername(player.uuid);
     }
@@ -63,7 +82,9 @@ async function fixPlayerName(player) {
     return player;
 }
 
+
 async function mojangUuidToUsername(uuid) {
+
     const cleanUuid = uuid.replace(/-/g, "");
 
     const response = await fetch(
@@ -79,4 +100,29 @@ async function mojangUuidToUsername(uuid) {
     return data.name;
 }
 
-loadRankings();
+
+// Board buttons
+const buttons = document.querySelectorAll(".board-button");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        // Remove active state from all buttons
+        buttons.forEach(button => {
+            button.classList.remove("active");
+        });
+
+        // Activate clicked button
+        button.classList.add("active");
+
+        // Load selected leaderboard
+        const board = button.dataset.board;
+
+        loadRankings(board);
+    });
+});
+
+
+// Load default board
+loadRankings("frosthex");
