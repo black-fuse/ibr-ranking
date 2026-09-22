@@ -1,4 +1,5 @@
 import json
+import requests
 import os
 from collections import defaultdict
 
@@ -244,7 +245,19 @@ class RankingSystem:
         player = self.players.get(uuid)
 
         if not player:
-            return uuid
+            try:
+                response = requests.get(
+                    f"https://sessionserver.mojang.com/session/minecraft/profile/{uuid}",
+                    timeout=10
+                )
+                response.raise_for_status()
+
+                data = response.json()
+                return data["name"]
+
+            except Exception as e:
+                print(f"[WARN] {e}")
+                return uuid
 
         return (
             player.get("display_name")
@@ -394,4 +407,14 @@ frosthex_ranking.export_json(
 brwc_ranking = RankingSystem(source="brwc")
 brwc_ranking.export_json(
     "website/data/rankings_brwc.json"
+)
+
+bbrl_ranking = RankingSystem(source="bbrl")
+bbrl_ranking.export_json(
+    "website/data/rankings_bbrl.json"
+)
+
+boatlabs_ranking = RankingSystem(source="boatlabs")
+boatlabs_ranking.export_json(
+    "website/data/rankings_boatlabs.json"
 )

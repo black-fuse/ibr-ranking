@@ -1,41 +1,1246 @@
 {
-    "tracks": [],
+    "tracks": [
+        {
+            "source": "frosthex",
+            "command_name": "Shanghai2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Miami2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monaco2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2023",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2023BETA",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hungaroring2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Zandvoort2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Singapore2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2023",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Mexico2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Interlagos2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegas2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Qatar2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "YasMarina2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2024Race",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Circuit24hLeMans",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2021",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2024Race",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024BTE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "ZandvoortTest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MexicoOval",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegasPitTest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Australia2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Shanghai2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Suzuka2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MelbourneSportsCentre",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Bahrain2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Jeddah2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monaco2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Miami2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BrekiiituneImola",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LimboVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CyberWorldVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SingaporeVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MidgarExpresswayYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "meswampYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanadaYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2025FC2",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2025Old",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD1",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD2",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD3",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TheRefuge",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FinspangCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanyonCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "AlanzaCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MindavilleSpeedway",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BoatraceParkway",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hungaroring2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "NullScapes",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Zandvoort2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2025GimmickPractice",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2024Junk",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Singapore2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BrannheimGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Mexico2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MallardParkGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BoingburgGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "KuraGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Interlagos2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegas2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Qatar2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MeltingPotGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SilverstoneW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FrappeSnowland",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Aquaduct",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BCC25",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "EebreeCoast",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BarcelonaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRingIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RBRpit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanadaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FlowerCoastGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TritonGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TheOrangeHazeGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MiamiW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "JeddahW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SepangIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SuzukaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "trackCreatePrac",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Australia2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MelbourneOutbackSports",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "QatarIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "ImolaIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RallyABGGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "test",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "JedDahlia",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpringSummitGOLFH",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchampsIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WyerianRacewayGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MonacoOutline",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LeMansIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TTGTeleportTool",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "InterlagosIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "cctest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSFinnishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSSwedishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSNewZealandGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSNetherLandsGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSCroatianGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSTurkishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSFrenchGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hidden",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "COTAIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "monzapittest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "PelicansEvents",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSMadagascanGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSHungarianGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MooMooMeadowscc",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "EEEE",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "HockenheimRing",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "SilverstonePigalalaVer",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2tp1",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2tp2",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "MidCityCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "BilsterBergShort",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "Sachsenring",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "honeycomb4",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "MagnyCours",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "PunkHazardRBSkipPrac",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "AeroportAssezContent",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "AeroportTresContent",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "ValcrestInternational",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "28gRedSkippractice",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshIsleOLD",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SpawnRing",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "WallTapValley",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "EndstoneCityCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "WinterValley",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CaliforniaGurlsLand",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "jaedenstrack",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "YubiwaRing",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SkydomeCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "ZeraokCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Limbooncrack",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "HallowsGrove",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "MaspalomasKarting",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SunderlandSpeedway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "theygiveyatheproperty",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "oldRAHHH",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "IceyArchipelago",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Fish",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "VillagePillage",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshIsle",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FrostbiteSpeedway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Iboughtapropertyinegypt",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "O2Racing",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FrostbiteKarting",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "HyphaeHighway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BlockstopCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SeedyCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "ZeraokCircuitV2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CircuitdelaBaguette",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "ufvbcj1",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NyliumNightway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "WaterwaySpeedway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BBRLRacingRing",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshIsleV2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FlowerCoast",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "WallTapValleyV2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "MallardPark",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SpeedTest1ICE",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SpeedTest2PACKEDICE",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SpeedTest3BLUEICE",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SilverstoneCircuit2025",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "StraightLine",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Marnjelo",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FIMonza",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Verdash",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Veltrix",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "ChillyPond",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "RajiaruRaceway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FIMelbourneGP",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "28g",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Anatidaephobia",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NullScapes",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SpringSummit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Test2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Triton",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "VotingParkour",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CretaceousCarpark",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "RAHHH",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshAirpark",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "splitroutetest",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FrankBrian2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NetherNightway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "HigherHighways",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SkyScraping",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "ChillyPondReverse",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "AuroraNortica",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "AmsterdamDrift",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "LastLegs",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "LuigiRacewayN64",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "MooMooFarmN64",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BrimstoneSpeedway",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "N64ChocoMountain",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "28gRed",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshAirparkV2",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Frost",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SentryTutorial",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "DaisyCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "GBARiversidePark",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Kintsugi",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "WallTapValleyBBRL",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Rikon",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SunderlandSpeedwayBBRL",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NuclearTides",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "SugarRush",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "TrackTesting",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "VelocittaTest",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Alliedroring",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "JoCo",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Cathay",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BBRLTestTrack",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "VelkaraCircuit",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "AlliedroringClubLayout",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Alliedrallyring",
+            "error": "'bbrl'"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CircuitdeTungSahur",
+            "error": "'bbrl'"
+        }
+    ],
     "players": [
+        {
+            "uuid": "b5120402-f5bf-4f33-b965-1c5f79f5f66e",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b5120402-f5bf-4f33-b965-1c5f79f5f66e?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
         {
             "uuid": "03356961-960b-43d2-8b8b-2c8b5a21f9f6",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/03356961-960b-43d2-8b8b-2c8b5a21f9f6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "8e4541f2-743e-4545-8d1b-4a3f76a8ab45",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8e4541f2-743e-4545-8d1b-4a3f76a8ab45?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "169a04ec-70b8-4b74-863c-9f3cbf117fcb",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/169a04ec-70b8-4b74-863c-9f3cbf117fcb?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "b4437d2a-8dd0-4b71-8eb6-087a1753dbbd",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b4437d2a-8dd0-4b71-8eb6-087a1753dbbd?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "8ab5543d-084f-4bfc-8a66-c20f978e0f32",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8ab5543d-084f-4bfc-8a66-c20f978e0f32?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
             "uuid": "80f0e1e9-92e3-4cd1-920a-c3d21a77a128",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/80f0e1e9-92e3-4cd1-920a-c3d21a77a128?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "fe115ad1-d69b-4577-82c8-1282ceaa793c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/fe115ad1-d69b-4577-82c8-1282ceaa793c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "5ab466ca-a439-4fc8-b173-0d9d3e7348a6",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/5ab466ca-a439-4fc8-b173-0d9d3e7348a6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "874fa94a-f0cc-429a-88f3-479daaaaa67b",
@@ -46,52 +1251,56 @@
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/71a30300-9664-4c0b-95d4-80398c05e935?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "b4437d2a-8dd0-4b71-8eb6-087a1753dbbd",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b4437d2a-8dd0-4b71-8eb6-087a1753dbbd?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "2519dada-fb20-42e2-9431-8f2997119bb8",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/2519dada-fb20-42e2-9431-8f2997119bb8?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "4651f475-ebe4-4388-8f63-051e00617a57",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4651f475-ebe4-4388-8f63-051e00617a57?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "11bec74a-f06c-4ff4-9f35-8c1733ecefa9",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/11bec74a-f06c-4ff4-9f35-8c1733ecefa9?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "4651f475-ebe4-4388-8f63-051e00617a57",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4651f475-ebe4-4388-8f63-051e00617a57?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "35a4307b-6d82-43cf-b69c-67cb5076b228",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/35a4307b-6d82-43cf-b69c-67cb5076b228?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "fe115ad1-d69b-4577-82c8-1282ceaa793c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/fe115ad1-d69b-4577-82c8-1282ceaa793c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "b5120402-f5bf-4f33-b965-1c5f79f5f66e",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b5120402-f5bf-4f33-b965-1c5f79f5f66e?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "0bb4ffaf-c666-430f-8943-e9a9eafe6b49",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/0bb4ffaf-c666-430f-8943-e9a9eafe6b49?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "648800e0-b4a7-46de-a6e5-6fea676dad5f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/648800e0-b4a7-46de-a6e5-6fea676dad5f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "5ab466ca-a439-4fc8-b173-0d9d3e7348a6",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/5ab466ca-a439-4fc8-b173-0d9d3e7348a6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "bdcbe645-e859-4980-8994-454431b8635f",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/bdcbe645-e859-4980-8994-454431b8635f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "88df759c-1c07-4b44-bb72-1c42fcc9eea6",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/88df759c-1c07-4b44-bb72-1c42fcc9eea6?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "b7d3836f-ac54-4bd5-890f-2d6963b5a23c",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b7d3836f-ac54-4bd5-890f-2d6963b5a23c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "6388c81e-b68c-4ebe-84a1-603a3b280ee8",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/6388c81e-b68c-4ebe-84a1-603a3b280ee8?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "acba33c9-adcd-43a3-98a5-690e06a43bcd",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/acba33c9-adcd-43a3-98a5-690e06a43bcd?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         }
     ]
 }

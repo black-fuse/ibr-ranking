@@ -14,7 +14,7 @@ PARAMS = {
 def get_tracks():
     response = requests.get(
         f"{BASE_URL}/readonly/tracks",
-        params=PARAMS
+        params=PARAMS,
     )
 
     response.raise_for_status()
@@ -24,7 +24,8 @@ def get_tracks():
 def get_track(track_name):
     response = requests.get(
         f"{V2_URL}/readonly/tracks/{track_name}",
-        params=PARAMS
+        params=PARAMS,
+        timeout=10
     )
 
     response.raise_for_status()
@@ -33,7 +34,8 @@ def get_track(track_name):
 def get_player(uuid):
     response = requests.get(
         f"{BASE_URL}/readonly/players/{uuid}",
-        params=PARAMS
+        params=PARAMS,
+        timeout=10
     )
 
     response.raise_for_status()

@@ -3,6 +3,7 @@ SOURCE_OFFSETS = {
     "frosthex": 1000000,
     "boatlabs": 2000000,
     "brwc": 3000000,
+    "bbrl": 4000000
 }
 
 def make_internal_id(source, source_id):
@@ -41,8 +42,8 @@ class Performance:
         self.player_uuid = data["player_uuid"]
         self.track_id = track_id
         self.time = data["time"]
-        self.date = data["date"]
-        self.position = None
+        self.date = data.get("date")
+        self.position = data.get("position")
 
     def to_dict(self):
         return {
@@ -124,7 +125,11 @@ class Track:
 
         track.source = data["source"]
         track.id = data["id"]
-        track.server_id = data["server_id"]
+        track.internal_id = make_internal_id(
+            track.source,
+            track.id
+        )
+
         track.command_name = data["command_name"]
         track.display_name = data["display_name"]
         track.type = data["type"]

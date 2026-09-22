@@ -1,25 +1,837 @@
 {
-    "tracks": [],
+    "tracks": [
+        {
+            "source": "frosthex",
+            "command_name": "Shanghai2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Miami2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monaco2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2023",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2023BETA",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hungaroring2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Zandvoort2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Singapore2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2023",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Mexico2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Interlagos2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegas2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Qatar2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "YasMarina2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2024Race",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Circuit24hLeMans",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2021",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2024Race",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024BTE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "ZandvoortTest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2024RACE",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2024",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MexicoOval",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegasPitTest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Australia2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Shanghai2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Suzuka2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MelbourneSportsCentre",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Bahrain2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Jeddah2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monaco2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Miami2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Imola2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BrekiiituneImola",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LimboVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CyberWorldVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SingaporeVCL",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MidgarExpresswayYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "meswampYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanadaYEEHAW",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Barcelona2025FC2",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRing2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchamps2025Old",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD1",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD2",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "DD3",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TheRefuge",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FinspangCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanyonCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "AlanzaCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MindavilleSpeedway",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BoatraceParkway",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hungaroring2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "NullScapes",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Zandvoort2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Monza2025GimmickPractice",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2024Junk",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Singapore2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BrannheimGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CircuitOfTheAmericas2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Mexico2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MallardParkGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BoingburgGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "KuraGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Interlagos2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LasVegas2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Qatar2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MeltingPotGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SilverstoneW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FrappeSnowland",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Aquaduct",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BCC25",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "EebreeCoast",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "BarcelonaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RedBullRingIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RBRpit",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "CanadaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "FlowerCoastGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TritonGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TheOrangeHazeGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MiamiW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "JeddahW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SepangIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SuzukaW4FC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "trackCreatePrac",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Australia2025",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MelbourneOutbackSports",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "QatarIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "ImolaIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Canada2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "RallyABGGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "test",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "JedDahlia",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpringSummitGOLFH",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "SpaFrancorchampsIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WyerianRacewayGOLF",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MonacoOutline",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "LeMansIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Silverstone2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "TTGTeleportTool",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "InterlagosIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "cctest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSFinnishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSSwedishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSNewZealandGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSNetherLandsGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSCroatianGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSTurkishGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSFrenchGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Hidden",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "COTAIEC",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "monzapittest",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "PelicansEvents",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSMadagascanGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "WIBRSHungarianGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "MooMooMeadowscc",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "Baku2026",
+            "error": "track was closed"
+        },
+        {
+            "source": "frosthex",
+            "command_name": "EEEE",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "HockenheimRing",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "SilverstonePigalalaVer",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2tp1",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "TeaCircuitV2tp2",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "MidCityCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "BilsterBergShort",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "Sachsenring",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "honeycomb4",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "MagnyCours",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "PunkHazardRBSkipPrac",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "AeroportAssezContent",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "AeroportTresContent",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "ValcrestInternational",
+            "error": "track was closed"
+        },
+        {
+            "source": "brwc",
+            "command_name": "28gRedSkippractice",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CaliforniaGurlsLand",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "jaedenstrack",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshCircuit",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "FIMelbourneGP",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NullScapes",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "Triton",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "splitroutetest",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "NetherNightway",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "28gRed",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "BoshAirparkV2",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "TrackTesting",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "VelocittaTest",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "AlliedroringClubLayout",
+            "error": "track was closed"
+        },
+        {
+            "source": "bbrl",
+            "command_name": "CircuitdeTungSahur",
+            "error": "track was closed"
+        }
+    ],
     "players": [
-        {
-            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
-            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
-        },
-        {
-            "uuid": "8ab5543d-084f-4bfc-8a66-c20f978e0f32",
-            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/8ab5543d-084f-4bfc-8a66-c20f978e0f32?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
-        },
-        {
-            "uuid": "4651f475-ebe4-4388-8f63-051e00617a57",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4651f475-ebe4-4388-8f63-051e00617a57?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
         {
             "uuid": "b5120402-f5bf-4f33-b965-1c5f79f5f66e",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b5120402-f5bf-4f33-b965-1c5f79f5f66e?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
+            "uuid": "03356961-960b-43d2-8b8b-2c8b5a21f9f6",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/03356961-960b-43d2-8b8b-2c8b5a21f9f6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
             "uuid": "b4437d2a-8dd0-4b71-8eb6-087a1753dbbd",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b4437d2a-8dd0-4b71-8eb6-087a1753dbbd?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "8ab5543d-084f-4bfc-8a66-c20f978e0f32",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8ab5543d-084f-4bfc-8a66-c20f978e0f32?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "80f0e1e9-92e3-4cd1-920a-c3d21a77a128",
@@ -30,32 +842,52 @@
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/874fa94a-f0cc-429a-88f3-479daaaaa67b?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
+            "uuid": "71a30300-9664-4c0b-95d4-80398c05e935",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/71a30300-9664-4c0b-95d4-80398c05e935?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "b6218825-a615-430a-a36c-e2666085022c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/b6218825-a615-430a-a36c-e2666085022c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
+            "uuid": "4651f475-ebe4-4388-8f63-051e00617a57",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4651f475-ebe4-4388-8f63-051e00617a57?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+        },
+        {
             "uuid": "fe115ad1-d69b-4577-82c8-1282ceaa793c",
             "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/fe115ad1-d69b-4577-82c8-1282ceaa793c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "03356961-960b-43d2-8b8b-2c8b5a21f9f6",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/03356961-960b-43d2-8b8b-2c8b5a21f9f6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "71a30300-9664-4c0b-95d4-80398c05e935",
-            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/71a30300-9664-4c0b-95d4-80398c05e935?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+            "uuid": "5ab466ca-a439-4fc8-b173-0d9d3e7348a6",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/5ab466ca-a439-4fc8-b173-0d9d3e7348a6?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
-            "uuid": "b7d3836f-ac54-4bd5-890f-2d6963b5a23c",
-            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b7d3836f-ac54-4bd5-890f-2d6963b5a23c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+            "uuid": "bdcbe645-e859-4980-8994-454431b8635f",
+            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/bdcbe645-e859-4980-8994-454431b8635f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
         },
         {
             "uuid": "88df759c-1c07-4b44-bb72-1c42fcc9eea6",
             "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/88df759c-1c07-4b44-bb72-1c42fcc9eea6?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         },
         {
-            "uuid": "2519dada-fb20-42e2-9431-8f2997119bb8",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/2519dada-fb20-42e2-9431-8f2997119bb8?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
-        },
-        {
-            "uuid": "64942d75-0184-4461-927a-ed9b97b914fa",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/64942d75-0184-4461-927a-ed9b97b914fa?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "b7d3836f-ac54-4bd5-890f-2d6963b5a23c",
+            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/b7d3836f-ac54-4bd5-890f-2d6963b5a23c?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         },
         {
             "uuid": "6388c81e-b68c-4ebe-84a1-603a3b280ee8",
@@ -66,20 +898,276 @@
             "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/acba33c9-adcd-43a3-98a5-690e06a43bcd?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
         },
         {
-            "uuid": "169a04ec-70b8-4b74-863c-9f3cbf117fcb",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/169a04ec-70b8-4b74-863c-9f3cbf117fcb?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "5ea359de-ef78-493e-9f04-800f9ab61b96",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5ea359de-ef78-493e-9f04-800f9ab61b96?api_key=bbrl-timingsystem-key"
         },
         {
-            "uuid": "4f352a04-62d2-47e7-bc7b-1ea55df1a41c",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/4f352a04-62d2-47e7-bc7b-1ea55df1a41c?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "16b37797-8eba-4566-8ddd-0e4ddd729a0b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/16b37797-8eba-4566-8ddd-0e4ddd729a0b?api_key=bbrl-timingsystem-key"
         },
         {
-            "uuid": "8be69064-a7ab-4424-a711-ebd780e0400f",
-            "error": "500 Server Error: Server Error for url: http://fc1.api.frosthex.com/api/v1/readonly/players/8be69064-a7ab-4424-a711-ebd780e0400f?api_key=6c7cd6e8-8b49-4424-8186-2181af26f4ba"
+            "uuid": "c43ffa80-417c-4a1e-a016-95bfe6e5c499",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c43ffa80-417c-4a1e-a016-95bfe6e5c499?api_key=bbrl-timingsystem-key"
         },
         {
-            "uuid": "6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0",
-            "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/6c2371ce-f078-4f9d-b3ff-3cc904a8c3b0?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+            "uuid": "609a2d53-705c-431f-8008-1205683abf50",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/609a2d53-705c-431f-8008-1205683abf50?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d041879e-f772-4d1d-9e29-672ba2367fce",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d041879e-f772-4d1d-9e29-672ba2367fce?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "187b0783-ab4b-4262-9d3f-f416b628b68d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/187b0783-ab4b-4262-9d3f-f416b628b68d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4ee51d1f-9039-4a8d-8847-6c45632a137b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4ee51d1f-9039-4a8d-8847-6c45632a137b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "847506c8-f766-449d-a596-525342e0ddf5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/847506c8-f766-449d-a596-525342e0ddf5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "2b88f380-4b72-48c8-af01-d3911d965e31",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/2b88f380-4b72-48c8-af01-d3911d965e31?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "e98e12d0-215b-4485-9997-00b761a8a499",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/e98e12d0-215b-4485-9997-00b761a8a499?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a7bb9ddc-2227-48fd-86c9-3160de78f7a6",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a7bb9ddc-2227-48fd-86c9-3160de78f7a6?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5adfb653-0743-42c2-9b53-891c7337af35",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5adfb653-0743-42c2-9b53-891c7337af35?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5d9ffd8f-6d06-4a97-861a-79c3840935f5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5d9ffd8f-6d06-4a97-861a-79c3840935f5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "9f4062c8-bdc8-4295-a758-2fa693807070",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/9f4062c8-bdc8-4295-a758-2fa693807070?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f06dc340-564e-4438-93dd-20cfd23a8c06",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f06dc340-564e-4438-93dd-20cfd23a8c06?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "38ba2b58-30e5-43e6-9611-512281895af2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/38ba2b58-30e5-43e6-9611-512281895af2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "761c0666-a5a6-426c-908d-054964a50624",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/761c0666-a5a6-426c-908d-054964a50624?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "42ca4376-a61a-4577-83a0-920c590e9ac1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/42ca4376-a61a-4577-83a0-920c590e9ac1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "fd078f03-bc2f-4cd1-9a91-1862446eb019",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/fd078f03-bc2f-4cd1-9a91-1862446eb019?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8606af93-ed42-4737-acf6-6139d43565a2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8606af93-ed42-4737-acf6-6139d43565a2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f9ac8bd8-f1bc-4835-8d0b-f9330835b6b0",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f9ac8bd8-f1bc-4835-8d0b-f9330835b6b0?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "447966ed-f6bb-42b9-b29f-df9841e16793",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/447966ed-f6bb-42b9-b29f-df9841e16793?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "bd8dd6ce-ce15-442b-bf4c-a884a5000f63",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/bd8dd6ce-ce15-442b-bf4c-a884a5000f63?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "df70d169-f529-4a68-a468-25593a1be43d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/df70d169-f529-4a68-a468-25593a1be43d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "09f8e43a-0836-488c-a080-3cdd4367fcb5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/09f8e43a-0836-488c-a080-3cdd4367fcb5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a327d960-a4ed-4807-b85f-8b11d70bcc53",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a327d960-a4ed-4807-b85f-8b11d70bcc53?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "839b2f2f-6952-4ff3-bca9-625a08d534d9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/839b2f2f-6952-4ff3-bca9-625a08d534d9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "7062c3ee-1b14-4f2c-b265-b824f2aa9375",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/7062c3ee-1b14-4f2c-b265-b824f2aa9375?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "c90a70fd-fbc2-4217-ae8b-85964f1fd78b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c90a70fd-fbc2-4217-ae8b-85964f1fd78b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d933cf22-44b7-4297-85cb-520cdfa9b3ea",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d933cf22-44b7-4297-85cb-520cdfa9b3ea?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "ff5eb2a5-2c25-4285-bbd6-c54273bd234c",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/ff5eb2a5-2c25-4285-bbd6-c54273bd234c?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4202c1e8-bbea-4f47-b0c0-799bca980631",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4202c1e8-bbea-4f47-b0c0-799bca980631?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "23525d9f-999c-449e-81b2-5955b56f88c0",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/23525d9f-999c-449e-81b2-5955b56f88c0?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8f2f526a-2770-4a1b-9672-a2c30a6e4b9a",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8f2f526a-2770-4a1b-9672-a2c30a6e4b9a?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "74b07a3f-5610-404c-991c-063a00500df2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/74b07a3f-5610-404c-991c-063a00500df2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "83169933-40f6-47b4-a08a-999df6615c3d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/83169933-40f6-47b4-a08a-999df6615c3d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "6b3b5567-e661-444d-b6fb-ee21060149f3",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/6b3b5567-e661-444d-b6fb-ee21060149f3?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "54c7de19-5eb9-4d03-b3c4-b2f4d7b91d1d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/54c7de19-5eb9-4d03-b3c4-b2f4d7b91d1d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "869d3bb6-327c-4897-a786-7846534cca8b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/869d3bb6-327c-4897-a786-7846534cca8b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "57d4aba1-2143-4864-add4-c96b5c6fb92e",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/57d4aba1-2143-4864-add4-c96b5c6fb92e?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8aa089f4-2bb0-44f1-a1d3-87e77d76c613",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8aa089f4-2bb0-44f1-a1d3-87e77d76c613?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "18466e41-9941-4b5d-bf3a-8220874be6f7",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/18466e41-9941-4b5d-bf3a-8220874be6f7?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "57e25787-330b-4568-92b9-371f70802320",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/57e25787-330b-4568-92b9-371f70802320?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "0aa4fc6c-72ea-43d9-8ede-a27f8030d4e1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/0aa4fc6c-72ea-43d9-8ede-a27f8030d4e1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a86915e9-d954-4d6c-9a76-858e65a407b1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a86915e9-d954-4d6c-9a76-858e65a407b1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "c513bc6b-2b67-4080-9427-7c7c8b7c5730",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c513bc6b-2b67-4080-9427-7c7c8b7c5730?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4846e5f9-8da2-4ace-b0a1-13edafeac4d4",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4846e5f9-8da2-4ace-b0a1-13edafeac4d4?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5b299216-c401-4e72-bfaf-cb5e0c8fcfec",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5b299216-c401-4e72-bfaf-cb5e0c8fcfec?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f5ab6ae3-1a8b-4370-8ef6-8c0d5bac57a5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f5ab6ae3-1a8b-4370-8ef6-8c0d5bac57a5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b573d4b0-9714-4bac-bfe7-752c6b59dfcb",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b573d4b0-9714-4bac-bfe7-752c6b59dfcb?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b19b6672-11a5-4cc4-8ed0-a2ff54285a31",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b19b6672-11a5-4cc4-8ed0-a2ff54285a31?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b38a0d1c-ad85-47d4-8fbd-078dede40284",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b38a0d1c-ad85-47d4-8fbd-078dede40284?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "69ae5371-94f1-4463-81be-a2f916acd737",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/69ae5371-94f1-4463-81be-a2f916acd737?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "090e2294-b915-4ef7-af2a-60a8abe3f5bc",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/090e2294-b915-4ef7-af2a-60a8abe3f5bc?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "02be967b-57f6-4564-8070-afefdb4b265d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/02be967b-57f6-4564-8070-afefdb4b265d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "879ba6b5-e372-4c8b-8adc-b1145c4f19d8",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/879ba6b5-e372-4c8b-8adc-b1145c4f19d8?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "7cfc0bf8-7a78-495c-98ff-a699ecad6be5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/7cfc0bf8-7a78-495c-98ff-a699ecad6be5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d2154981-9615-42eb-b357-0ebc6a12c8ac",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d2154981-9615-42eb-b357-0ebc6a12c8ac?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4db5ae1f-4736-482f-bb3e-4a22021334c9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4db5ae1f-4736-482f-bb3e-4a22021334c9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "fe801f74-3111-471a-9f91-08df85a9580f",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/fe801f74-3111-471a-9f91-08df85a9580f?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "82b4546f-7516-4c12-b346-6f786a150cf9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/82b4546f-7516-4c12-b346-6f786a150cf9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d294ac94-5409-4c8c-bb14-6e45e4fa6bcd",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d294ac94-5409-4c8c-bb14-6e45e4fa6bcd?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "56efe937-d437-4773-a5f9-a58bde6e2676",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/56efe937-d437-4773-a5f9-a58bde6e2676?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "38f1c881-b383-4287-8124-2e52a5f25692",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/38f1c881-b383-4287-8124-2e52a5f25692?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "069a0777-7e29-4418-a08b-361f834d8fd2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/069a0777-7e29-4418-a08b-361f834d8fd2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a8205b2a-431c-4464-9e86-5314d845fd5d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a8205b2a-431c-4464-9e86-5314d845fd5d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "2726f5d0-210d-441e-be12-c14799d7ec45",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/2726f5d0-210d-441e-be12-c14799d7ec45?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d8237c74-6a1f-47b7-9fba-affba1771a83",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d8237c74-6a1f-47b7-9fba-affba1771a83?api_key=bbrl-timingsystem-key"
         }
     ]
 }

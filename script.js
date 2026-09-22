@@ -1,6 +1,8 @@
 const boards = {
     frosthex: "website/data/rankings_frosthex.json",
     brwc: "website/data/rankings_brwc.json",
+    bbrl: "website/data/rankings_bbrl.json",
+    boatlabs: "website/data/rankings_boatlabs.json",
     all: "website/data/rankings.json"
 };
 

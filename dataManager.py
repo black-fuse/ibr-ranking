@@ -4,6 +4,7 @@ import os
 import sources.frosthexEvent as frosthexEvent
 import sources.brwc as brwc
 import sources.bbrl as bbrl
+import sources.boatlabs as boatlabs
 
 from models import Track, Player
 
@@ -18,7 +19,8 @@ class DataManager:
         self.sources = [
             ("frosthex", frosthexEvent),
             ("brwc", brwc),
-            ("bbrl", bbrl)
+            ("bbrl", bbrl),
+            ("boatlabs", boatlabs)
         ]
 
         self.tracks = {}
@@ -64,7 +66,7 @@ class DataManager:
                 for track_id, track_data in data.items():
                     try:
                         track = Track.from_dict(track_data)
-                        self.tracks[track.id] = track
+                        self.tracks[track.internal_id] = track
 
                     except Exception as e:
                         print(
@@ -146,7 +148,7 @@ class DataManager:
                                             })
                         
                     else:
-                        self.tracks[track.id] = track
+                        self.tracks[track.internal_id] = track
 
                 except Exception as e:
                     print(
