@@ -6,6 +6,18 @@ const boards = {
     all: "website/data/rankings.json"
 };
 
+const backgrounds = document.querySelectorAll(".hero-background img");
+
+let current = 0;
+backgrounds[current].style.opacity = 1;
+
+setInterval(() => {
+    backgrounds[current].style.opacity = 0;
+
+    current = (current + 1) % backgrounds.length;
+
+    backgrounds[current].style.opacity = 1;
+}, 8000);
 
 async function loadRankings(board) {
 
