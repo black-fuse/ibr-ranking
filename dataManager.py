@@ -1,8 +1,9 @@
 import json
 import os
 
-import sources.frosthex.frosthex as frosthex
-import sources.brwc.brwc as brwc
+import sources.frosthexEvent as frosthexEvent
+import sources.brwc as brwc
+import sources.bbrl as bbrl
 
 from models import Track, Player
 
@@ -15,8 +16,9 @@ class DataManager:
 
         # All data sources
         self.sources = [
-            ("frosthex", frosthex),
+            ("frosthex", frosthexEvent),
             ("brwc", brwc),
+            ("bbrl", bbrl)
         ]
 
         self.tracks = {}
@@ -66,7 +68,7 @@ class DataManager:
 
                     except Exception as e:
                         print(
-                            f"[WARN] Failed to load cached track "
+                            "[WARN] Failed to load cached track "
                             f"{track_id}: {e}"
                         )
 
@@ -134,7 +136,17 @@ class DataManager:
 
                     track = Track(data, source_name)
 
-                    self.tracks[track.id] = track
+                    if track.open == False:
+                        print(f"[Log] Skipped {track.display_name} because it was closed")
+
+                        self.failed_tracks.append({
+                                                "source": source_name,
+                                                "command_name": command_name,
+                                                "error": "track was closed"
+                                            })
+                        
+                    else:
+                        self.tracks[track.id] = track
 
                 except Exception as e:
                     print(
