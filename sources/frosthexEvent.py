@@ -1,6 +1,6 @@
 import requests
 
-with open(r'sensitives\frosthexAPI.txt') as FHkey:
+with open(r'sensitives\frosthexEventAPI.txt') as FHkey:
     API_KEY = FHkey.readline().strip()
 
 BASE_URL = "http://fc1.api.frosthex.com/api/v1"
@@ -33,6 +33,15 @@ def get_track(track_name):
 def get_player(uuid):
     response = requests.get(
         f"{BASE_URL}/readonly/players/{uuid}",
+        params=PARAMS
+    )
+
+    response.raise_for_status()
+    return response.json()
+
+def get_Event(event_name):
+    response = requests.get(
+        f"{V2_URL}/readonly/events/results/{event_name}",
         params=PARAMS
     )
 

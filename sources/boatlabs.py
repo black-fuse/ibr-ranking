@@ -26,3 +26,19 @@ def get_player(uuid):
 
     response.raise_for_status()
     return response.json()
+
+def getEvents():
+    response = requests.get(
+            f"{BASE_URL}/getEvents"
+        )
+
+    response.raise_for_status()
+    return response.json()
+
+def getEvent(event_name):
+    response = requests.get(
+            f"{BASE_URL}/getEvent{event_name}"
+        )
+
+    response.raise_for_status()
+    return response.json()

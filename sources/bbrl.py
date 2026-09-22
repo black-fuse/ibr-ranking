@@ -1,10 +1,10 @@
 import requests
 
-with open(r'sensitives\brwcAPI.txt') as FHkey:
+with open(r'sensitives\bbrl.txt') as FHkey:
     API_KEY = FHkey.readline().strip()
 
-BASE_URL = "https://bbrl.mc-crafters.com/api/v1"
-V2_URL = "https://bbrl.mc-crafters.com/api/v2"
+BASE_URL = "http://202.36.95.48:27755/api/v1"
+V2_URL = "http://202.36.95.48:27755/api/v2"
 
 PARAMS = {
     "api_key": API_KEY
