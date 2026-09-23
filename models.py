@@ -1,6 +1,7 @@
 
 SOURCE_OFFSETS = {
-    "frosthex": 1000000,
+    "frosthex": 0,
+    "frosthexEvent": 1000000,
     "boatlabs": 2000000,
     "brwc": 3000000,
     "bbrl": 4000000

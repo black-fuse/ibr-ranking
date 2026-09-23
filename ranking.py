@@ -2,6 +2,7 @@ import json
 import requests
 import os
 from collections import defaultdict
+from tqdm import tqdm
 
 
 class PlayerStats:
@@ -347,52 +348,137 @@ class RankingSystem:
 
         return None
 
-    def export_json(self, output_path="website/data/rankings.json"):
+    def export_json(
+        self,
+        output_path="website/data/rankings.json",
+        page_size=1000
+    ):
 
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        # Turn the requested file path into a directory.
+        # rankings.json -> rankings/
+        output_dir = os.path.splitext(output_path)[0]
+
+        os.makedirs(output_dir, exist_ok=True)
 
         rankings = self.rankings()
 
-        data = []
+        total_players = len(rankings)
+        total_pages = (
+            (total_players + page_size - 1) // page_size
+            if total_players
+            else 0
+        )
 
-        for rank, stats in enumerate(rankings, start=1):
+        # ---------------------------------------------------------
+        # Export ranking pages
+        # ---------------------------------------------------------
 
-            data.append({
-                "rank": rank,
-                "uuid": stats.uuid,
-                "name": self.get_name(stats.uuid),
+        # ---------------------------------------------------------
+        # Export ranking pages
+        # ---------------------------------------------------------
 
-                "score": round(stats.score, 2),
+        progress = tqdm(
+            total=total_players,
+            desc="Exporting rankings",
+            unit="player"
+        )
 
-                "performances": stats.performances,
-                "tracks": len(stats.tracks),
-                "coverage": round(stats.coverage, 2),
+        for page in range(total_pages):
 
-                "track_records": stats.track_records,
-                "podiums": stats.podiums,
-                "top_5": stats.top_5,
-                "top_10": stats.top_10,
+            start = page * page_size
+            end = min(start + page_size, total_players)
 
-                "average_position": (
-                    round(stats.average_position, 2)
-                    if stats.average_position is not None
-                    else None
-                ),
+            page_rankings = rankings[start:end]
 
-                "best_position": stats.best_position,
+            data = []
 
-                "best_time": (
-                    round(stats.best_time, 3)
-                    if stats.best_time is not None
-                    else None
+            for rank, stats in enumerate(
+                page_rankings,
+                start=start + 1
+            ):
+
+                data.append({
+                    "rank": rank,
+                    "uuid": stats.uuid,
+                    "name": self.get_name(stats.uuid),
+
+                    "score": round(stats.score, 2),
+
+                    "performances": stats.performances,
+                    "tracks": len(stats.tracks),
+                    "coverage": round(stats.coverage, 2),
+
+                    "track_records": stats.track_records,
+                    "podiums": stats.podiums,
+                    "top_5": stats.top_5,
+                    "top_10": stats.top_10,
+
+                    "average_position": (
+                        round(stats.average_position, 2)
+                        if stats.average_position is not None
+                        else None
+                    ),
+
+                    "best_position": stats.best_position,
+
+                    "best_time": (
+                        round(stats.best_time, 3)
+                        if stats.best_time is not None
+                        else None
+                    )
+                })
+
+                progress.update(1)
+
+            page_path = os.path.join(
+                output_dir,
+                f"page_{page + 1}.json"
+            )
+
+            with open(
+                page_path,
+                "w",
+                encoding="utf-8"
+            ) as f:
+
+                json.dump(
+                    data,
+                    f,
+                    separators=(",", ":")
                 )
-            })
 
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)
+        progress.close()
+
+        # ---------------------------------------------------------
+        # Export metadata
+        # ---------------------------------------------------------
+
+        metadata = {
+            "total_players": total_players,
+            "page_size": page_size,
+            "total_pages": total_pages
+        }
+
+        metadata_path = os.path.join(
+            output_dir,
+            "index.json"
+        )
+
+        with open(
+            metadata_path,
+            "w",
+            encoding="utf-8"
+        ) as f:
+
+            json.dump(
+                metadata,
+                f,
+                indent=4
+            )
 
         print(
-            f"[INFO] Exported {len(data)} players to {output_path}"
+            f"[INFO] Exported {total_players} players "
+            f"across {total_pages} pages to {output_dir}"
         )
 
 ranking = RankingSystem()
@@ -403,6 +489,12 @@ frosthex_ranking = RankingSystem(source="frosthex")
 frosthex_ranking.export_json(
     "website/data/rankings_frosthex.json"
 )
+
+frosthex_event_ranking = RankingSystem(source="frosthexEvent")
+frosthex_event_ranking.export_json(
+    "website/data/rankings_frosthexEvent.json"
+)
+
 
 brwc_ranking = RankingSystem(source="brwc")
 brwc_ranking.export_json(

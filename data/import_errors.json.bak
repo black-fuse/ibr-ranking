@@ -747,478 +747,73 @@
         },
         {
             "source": "bbrl",
-            "command_name": "BoshIsleOLD",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SpawnRing",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "WallTapValley",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "EndstoneCityCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "WinterValley",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
             "command_name": "CaliforniaGurlsLand",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "jaedenstrack",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "YubiwaRing",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SkydomeCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "ZeraokCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Limbooncrack",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "HallowsGrove",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "MaspalomasKarting",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SunderlandSpeedway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "theygiveyatheproperty",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "oldRAHHH",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "IceyArchipelago",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Fish",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "VillagePillage",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BoshIsle",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "FrostbiteSpeedway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Iboughtapropertyinegypt",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "O2Racing",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "FrostbiteKarting",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "HyphaeHighway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BlockstopCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SeedyCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "ZeraokCircuitV2",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "CircuitdelaBaguette",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "ufvbcj1",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "NyliumNightway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "WaterwaySpeedway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BBRLRacingRing",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BoshIsleV2",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "FlowerCoast",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "WallTapValleyV2",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "MallardPark",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SpeedTest1ICE",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SpeedTest2PACKEDICE",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SpeedTest3BLUEICE",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SilverstoneCircuit2025",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "StraightLine",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Marnjelo",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "BoshCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "FIMonza",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Verdash",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Veltrix",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "ChillyPond",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "RajiaruRaceway",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "FIMelbourneGP",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "28g",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Anatidaephobia",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "NullScapes",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SpringSummit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Test2",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "Triton",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "VotingParkour",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "CretaceousCarpark",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "RAHHH",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BoshAirpark",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "splitroutetest",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "FrankBrian2",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "NetherNightway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "HigherHighways",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SkyScraping",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "ChillyPondReverse",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "AuroraNortica",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "AmsterdamDrift",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "LastLegs",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "LuigiRacewayN64",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "MooMooFarmN64",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BrimstoneSpeedway",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "N64ChocoMountain",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "28gRed",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "BoshAirparkV2",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Frost",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SentryTutorial",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "DaisyCircuit",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "GBARiversidePark",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Kintsugi",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "WallTapValleyBBRL",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Rikon",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SunderlandSpeedwayBBRL",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "NuclearTides",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "SugarRush",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "TrackTesting",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "VelocittaTest",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Alliedroring",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "JoCo",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Cathay",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "BBRLTestTrack",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "VelkaraCircuit",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "AlliedroringClubLayout",
-            "error": "'bbrl'"
-        },
-        {
-            "source": "bbrl",
-            "command_name": "Alliedrallyring",
-            "error": "'bbrl'"
+            "error": "track was closed"
         },
         {
             "source": "bbrl",
             "command_name": "CircuitdeTungSahur",
-            "error": "'bbrl'"
+            "error": "track was closed"
         }
     ],
     "players": [
@@ -1301,6 +896,278 @@
         {
             "uuid": "acba33c9-adcd-43a3-98a5-690e06a43bcd",
             "error": "500 Server Error: Server Error for url: https://api.mc.icedrifters.de/api/v1/readonly/players/acba33c9-adcd-43a3-98a5-690e06a43bcd?api_key=d8dc62b8-530b-4249-b4ae-6fe31b3b6c0f"
+        },
+        {
+            "uuid": "5ea359de-ef78-493e-9f04-800f9ab61b96",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5ea359de-ef78-493e-9f04-800f9ab61b96?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "16b37797-8eba-4566-8ddd-0e4ddd729a0b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/16b37797-8eba-4566-8ddd-0e4ddd729a0b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "c43ffa80-417c-4a1e-a016-95bfe6e5c499",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c43ffa80-417c-4a1e-a016-95bfe6e5c499?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "609a2d53-705c-431f-8008-1205683abf50",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/609a2d53-705c-431f-8008-1205683abf50?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d041879e-f772-4d1d-9e29-672ba2367fce",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d041879e-f772-4d1d-9e29-672ba2367fce?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "187b0783-ab4b-4262-9d3f-f416b628b68d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/187b0783-ab4b-4262-9d3f-f416b628b68d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4ee51d1f-9039-4a8d-8847-6c45632a137b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4ee51d1f-9039-4a8d-8847-6c45632a137b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "847506c8-f766-449d-a596-525342e0ddf5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/847506c8-f766-449d-a596-525342e0ddf5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "2b88f380-4b72-48c8-af01-d3911d965e31",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/2b88f380-4b72-48c8-af01-d3911d965e31?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "e98e12d0-215b-4485-9997-00b761a8a499",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/e98e12d0-215b-4485-9997-00b761a8a499?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a7bb9ddc-2227-48fd-86c9-3160de78f7a6",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a7bb9ddc-2227-48fd-86c9-3160de78f7a6?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5adfb653-0743-42c2-9b53-891c7337af35",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5adfb653-0743-42c2-9b53-891c7337af35?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5d9ffd8f-6d06-4a97-861a-79c3840935f5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5d9ffd8f-6d06-4a97-861a-79c3840935f5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "9f4062c8-bdc8-4295-a758-2fa693807070",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/9f4062c8-bdc8-4295-a758-2fa693807070?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f06dc340-564e-4438-93dd-20cfd23a8c06",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f06dc340-564e-4438-93dd-20cfd23a8c06?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "38ba2b58-30e5-43e6-9611-512281895af2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/38ba2b58-30e5-43e6-9611-512281895af2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "761c0666-a5a6-426c-908d-054964a50624",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/761c0666-a5a6-426c-908d-054964a50624?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "42ca4376-a61a-4577-83a0-920c590e9ac1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/42ca4376-a61a-4577-83a0-920c590e9ac1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "fd078f03-bc2f-4cd1-9a91-1862446eb019",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/fd078f03-bc2f-4cd1-9a91-1862446eb019?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8606af93-ed42-4737-acf6-6139d43565a2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8606af93-ed42-4737-acf6-6139d43565a2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f9ac8bd8-f1bc-4835-8d0b-f9330835b6b0",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f9ac8bd8-f1bc-4835-8d0b-f9330835b6b0?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "447966ed-f6bb-42b9-b29f-df9841e16793",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/447966ed-f6bb-42b9-b29f-df9841e16793?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "bd8dd6ce-ce15-442b-bf4c-a884a5000f63",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/bd8dd6ce-ce15-442b-bf4c-a884a5000f63?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "df70d169-f529-4a68-a468-25593a1be43d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/df70d169-f529-4a68-a468-25593a1be43d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "09f8e43a-0836-488c-a080-3cdd4367fcb5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/09f8e43a-0836-488c-a080-3cdd4367fcb5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a327d960-a4ed-4807-b85f-8b11d70bcc53",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a327d960-a4ed-4807-b85f-8b11d70bcc53?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "839b2f2f-6952-4ff3-bca9-625a08d534d9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/839b2f2f-6952-4ff3-bca9-625a08d534d9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "7062c3ee-1b14-4f2c-b265-b824f2aa9375",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/7062c3ee-1b14-4f2c-b265-b824f2aa9375?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "c90a70fd-fbc2-4217-ae8b-85964f1fd78b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c90a70fd-fbc2-4217-ae8b-85964f1fd78b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d933cf22-44b7-4297-85cb-520cdfa9b3ea",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d933cf22-44b7-4297-85cb-520cdfa9b3ea?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "ff5eb2a5-2c25-4285-bbd6-c54273bd234c",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/ff5eb2a5-2c25-4285-bbd6-c54273bd234c?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4202c1e8-bbea-4f47-b0c0-799bca980631",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4202c1e8-bbea-4f47-b0c0-799bca980631?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "23525d9f-999c-449e-81b2-5955b56f88c0",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/23525d9f-999c-449e-81b2-5955b56f88c0?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8f2f526a-2770-4a1b-9672-a2c30a6e4b9a",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8f2f526a-2770-4a1b-9672-a2c30a6e4b9a?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "74b07a3f-5610-404c-991c-063a00500df2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/74b07a3f-5610-404c-991c-063a00500df2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "83169933-40f6-47b4-a08a-999df6615c3d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/83169933-40f6-47b4-a08a-999df6615c3d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "6b3b5567-e661-444d-b6fb-ee21060149f3",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/6b3b5567-e661-444d-b6fb-ee21060149f3?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "54c7de19-5eb9-4d03-b3c4-b2f4d7b91d1d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/54c7de19-5eb9-4d03-b3c4-b2f4d7b91d1d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "869d3bb6-327c-4897-a786-7846534cca8b",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/869d3bb6-327c-4897-a786-7846534cca8b?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "57d4aba1-2143-4864-add4-c96b5c6fb92e",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/57d4aba1-2143-4864-add4-c96b5c6fb92e?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "8aa089f4-2bb0-44f1-a1d3-87e77d76c613",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/8aa089f4-2bb0-44f1-a1d3-87e77d76c613?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "18466e41-9941-4b5d-bf3a-8220874be6f7",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/18466e41-9941-4b5d-bf3a-8220874be6f7?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "57e25787-330b-4568-92b9-371f70802320",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/57e25787-330b-4568-92b9-371f70802320?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "0aa4fc6c-72ea-43d9-8ede-a27f8030d4e1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/0aa4fc6c-72ea-43d9-8ede-a27f8030d4e1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a86915e9-d954-4d6c-9a76-858e65a407b1",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a86915e9-d954-4d6c-9a76-858e65a407b1?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "c513bc6b-2b67-4080-9427-7c7c8b7c5730",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/c513bc6b-2b67-4080-9427-7c7c8b7c5730?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4846e5f9-8da2-4ace-b0a1-13edafeac4d4",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4846e5f9-8da2-4ace-b0a1-13edafeac4d4?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "5b299216-c401-4e72-bfaf-cb5e0c8fcfec",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/5b299216-c401-4e72-bfaf-cb5e0c8fcfec?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "f5ab6ae3-1a8b-4370-8ef6-8c0d5bac57a5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/f5ab6ae3-1a8b-4370-8ef6-8c0d5bac57a5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b573d4b0-9714-4bac-bfe7-752c6b59dfcb",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b573d4b0-9714-4bac-bfe7-752c6b59dfcb?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b19b6672-11a5-4cc4-8ed0-a2ff54285a31",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b19b6672-11a5-4cc4-8ed0-a2ff54285a31?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "b38a0d1c-ad85-47d4-8fbd-078dede40284",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/b38a0d1c-ad85-47d4-8fbd-078dede40284?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "69ae5371-94f1-4463-81be-a2f916acd737",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/69ae5371-94f1-4463-81be-a2f916acd737?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "090e2294-b915-4ef7-af2a-60a8abe3f5bc",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/090e2294-b915-4ef7-af2a-60a8abe3f5bc?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "02be967b-57f6-4564-8070-afefdb4b265d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/02be967b-57f6-4564-8070-afefdb4b265d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "879ba6b5-e372-4c8b-8adc-b1145c4f19d8",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/879ba6b5-e372-4c8b-8adc-b1145c4f19d8?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "7cfc0bf8-7a78-495c-98ff-a699ecad6be5",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/7cfc0bf8-7a78-495c-98ff-a699ecad6be5?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d2154981-9615-42eb-b357-0ebc6a12c8ac",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d2154981-9615-42eb-b357-0ebc6a12c8ac?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "4db5ae1f-4736-482f-bb3e-4a22021334c9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/4db5ae1f-4736-482f-bb3e-4a22021334c9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "fe801f74-3111-471a-9f91-08df85a9580f",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/fe801f74-3111-471a-9f91-08df85a9580f?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "82b4546f-7516-4c12-b346-6f786a150cf9",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/82b4546f-7516-4c12-b346-6f786a150cf9?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d294ac94-5409-4c8c-bb14-6e45e4fa6bcd",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d294ac94-5409-4c8c-bb14-6e45e4fa6bcd?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "56efe937-d437-4773-a5f9-a58bde6e2676",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/56efe937-d437-4773-a5f9-a58bde6e2676?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "38f1c881-b383-4287-8124-2e52a5f25692",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/38f1c881-b383-4287-8124-2e52a5f25692?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "069a0777-7e29-4418-a08b-361f834d8fd2",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/069a0777-7e29-4418-a08b-361f834d8fd2?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "a8205b2a-431c-4464-9e86-5314d845fd5d",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/a8205b2a-431c-4464-9e86-5314d845fd5d?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "2726f5d0-210d-441e-be12-c14799d7ec45",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/2726f5d0-210d-441e-be12-c14799d7ec45?api_key=bbrl-timingsystem-key"
+        },
+        {
+            "uuid": "d8237c74-6a1f-47b7-9fba-affba1771a83",
+            "error": "500 Server Error: Server Error for url: http://202.36.95.48:27755/api/v1/readonly/players/d8237c74-6a1f-47b7-9fba-affba1771a83?api_key=bbrl-timingsystem-key"
         }
     ]
 }

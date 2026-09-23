@@ -1,77 +1,219 @@
 const boards = {
-    frosthex: "website/data/rankings_frosthex.json",
-    brwc: "website/data/rankings_brwc.json",
-    bbrl: "website/data/rankings_bbrl.json",
-    boatlabs: "website/data/rankings_boatlabs.json",
-    all: "website/data/rankings.json"
+    frosthex: "website/data/rankings_frosthex",
+    FrosthexEvent: "website/data/rankings_frosthexEvent",
+    brwc: "website/data/rankings_brwc",
+    bbrl: "website/data/rankings_bbrl",
+    boatlabs: "website/data/rankings_boatlabs",
+    all: "website/data/rankings"
 };
+
 
 const backgrounds = document.querySelectorAll(".hero-background img");
 
 let current = 0;
-backgrounds[current].style.opacity = 1;
 
-setInterval(() => {
-    backgrounds[current].style.opacity = 0;
-
-    current = (current + 1) % backgrounds.length;
+if (backgrounds.length > 0) {
 
     backgrounds[current].style.opacity = 1;
-}, 8000);
+
+    setInterval(() => {
+
+        backgrounds[current].style.opacity = 0;
+
+        current = (current + 1) % backgrounds.length;
+
+        backgrounds[current].style.opacity = 1;
+
+    }, 8000);
+}
+
+
+
+let currentBoard = null;
+let currentPage = 0;
+let totalPages = 0;
+let loading = false;
+
+
+
+async function loadRankingIndex(board) {
+
+    const basePath = boards[board];
+
+    const response = await fetch(
+        `${basePath}/index.json`
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed to load ${basePath}/index.json`
+        );
+    }
+
+    return await response.json();
+}
+
+
+
+async function loadRankingPage(board, page) {
+
+    const basePath = boards[board];
+
+    const response = await fetch(
+        `${basePath}/page_${page}.json`
+    );
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed to load ${basePath}/page_${page}.json`
+        );
+    }
+
+    return await response.json();
+}
+
+
+
+function createPlayerWidget(player) {
+
+    const widget = document.createElement("div");
+    widget.className = "player-widget";
+
+    const rank = document.createElement("div");
+    rank.className = "player-rank";
+
+    const skin = document.createElement("img");
+    skin.className = "player-skin";
+
+    const name = document.createElement("div");
+    name.className = "player-name";
+
+    const score = document.createElement("div");
+    score.className = "player-score";
+
+    const tier = getTier(player.rank);
+
+    rank.textContent = player.rank;
+    rank.classList.add(tier);
+
+    name.textContent = player.name;
+
+    score.textContent = `${player.score} points`;
+
+    skin.src =
+        "https://mc-heads.net/avatar/"
+        + player.uuid
+        + "/50";
+
+    widget.appendChild(rank);
+    widget.appendChild(skin);
+    widget.appendChild(name);
+    widget.appendChild(score);
+
+    return widget;
+}
+
+
+async function loadNextPage() {
+
+    if (loading) {
+        return;
+    }
+
+    if (currentPage >= totalPages) {
+        return;
+    }
+
+    loading = true;
+
+    try {
+
+        const rankings = await loadRankingPage(
+            currentBoard,
+            currentPage + 1
+        );
+
+        const container =
+            document.getElementById("board-container");
+
+        for (const player of rankings) {
+
+            const widget =
+                createPlayerWidget(player);
+
+            container.appendChild(widget);
+        }
+
+        currentPage++;
+
+    } catch (error) {
+
+        console.error(
+            "Failed to load ranking page:",
+            error
+        );
+
+    } finally {
+
+        loading = false;
+    }
+}
+
 
 async function loadRankings(board) {
 
-    const response = await fetch(boards[board]);
+    currentBoard = board;
+    currentPage = 0;
+    totalPages = 0;
 
-    if (!response.ok) {
-        throw new Error(`Failed to load ${boards[board]}`);
-    }
-
-    const rankings = await response.json();
-
-    const container = document.getElementById("board-container");
+    const container =
+        document.getElementById("board-container");
 
     container.innerHTML = "";
 
-    for (const player of rankings) {
+    try {
 
-        const widget = document.createElement("div");
-        widget.className = "player-widget";
+        // Get page information
+        const index =
+            await loadRankingIndex(board);
 
-        const rank = document.createElement("div");
-        rank.className = "player-rank";
+        totalPages = index.total_pages;
 
-        const skin = document.createElement("img");
-        skin.className = "player-skin";
+        // Load first page
+        await loadNextPage();
 
-        const name = document.createElement("div");
-        name.className = "player-name";
+    } catch (error) {
 
-        const score = document.createElement("div");
-        score.className = "player-score";
+        console.error(
+            "Failed to load rankings:",
+            error
+        );
 
-        const tier = getTier(player.rank);
-
-        rank.textContent = player.rank;
-        rank.classList.add(tier);
-
-        name.textContent = player.name;
-
-        score.textContent = `${player.score} points`;
-
-        skin.src =
-            "https://mc-heads.net/avatar/"
-            + player.uuid
-            + "/50";
-
-        widget.appendChild(rank);
-        widget.appendChild(skin);
-        widget.appendChild(name);
-        widget.appendChild(score);
-
-        container.appendChild(widget);
+        container.innerHTML =
+            "<p>Failed to load rankings.</p>";
     }
 }
+
+// detect when user reaches bottom
+window.addEventListener("scroll", () => {
+
+    const scrollPosition =
+        window.innerHeight + window.scrollY;
+
+    const pageHeight =
+        document.documentElement.scrollHeight;
+
+    // Start loading slightly before the actual bottom
+    const threshold = 500;
+
+    if (
+        scrollPosition >= pageHeight - threshold
+        && !loading
+    ) {
+
+        loadNextPage();
+    }
+});
 
 
 function getTier(rank) {
@@ -90,7 +232,8 @@ function getTier(rank) {
 async function fixPlayerName(player) {
 
     if (player.name === player.uuid) {
-        player.name = await mojangUuidToUsername(player.uuid);
+        player.name =
+            await mojangUuidToUsername(player.uuid);
     }
 
     return player;
@@ -99,7 +242,8 @@ async function fixPlayerName(player) {
 
 async function mojangUuidToUsername(uuid) {
 
-    const cleanUuid = uuid.replace(/-/g, "");
+    const cleanUuid =
+        uuid.replace(/-/g, "");
 
     const response = await fetch(
         `https://sessionserver.mojang.com/session/minecraft/profile/${cleanUuid}`
@@ -109,34 +253,34 @@ async function mojangUuidToUsername(uuid) {
         return uuid;
     }
 
-    const data = await response.json();
+    const data =
+        await response.json();
 
     return data.name;
 }
 
 
-// Board buttons
-const buttons = document.querySelectorAll(".board-button");
+const buttons =
+    document.querySelectorAll(".board-button");
 
 buttons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        // Remove active state from all buttons
         buttons.forEach(button => {
             button.classList.remove("active");
         });
 
-        // Activate clicked button
         button.classList.add("active");
 
-        // Load selected leaderboard
-        const board = button.dataset.board;
+        const board =
+            button.dataset.board;
 
         loadRankings(board);
     });
 });
 
 
-// Load default board
-loadRankings("frosthex");
+
+
+loadRankings("all");

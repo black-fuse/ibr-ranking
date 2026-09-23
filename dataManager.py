@@ -2,6 +2,7 @@ import json
 import os
 
 import sources.frosthexEvent as frosthexEvent
+import sources.frosthex as frosthex
 import sources.brwc as brwc
 import sources.bbrl as bbrl
 import sources.boatlabs as boatlabs
@@ -17,7 +18,8 @@ class DataManager:
 
         # All data sources
         self.sources = [
-            ("frosthex", frosthexEvent),
+            ("frosthex", frosthex),
+            ("frosthexEvent", frosthexEvent),
             ("brwc", brwc),
             ("bbrl", bbrl),
             ("boatlabs", boatlabs)
