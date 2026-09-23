@@ -4,7 +4,9 @@ SOURCE_OFFSETS = {
     "frosthexEvent": 1000000,
     "boatlabs": 2000000,
     "brwc": 3000000,
-    "bbrl": 4000000
+    "bbrl": 4000000,
+    "wolfnetwork": 5000000,
+
 }
 
 def make_internal_id(source, source_id):

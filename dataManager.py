@@ -6,6 +6,7 @@ import sources.frosthex as frosthex
 import sources.brwc as brwc
 import sources.bbrl as bbrl
 import sources.boatlabs as boatlabs
+import sources.wolfnetwork as wolfnetwork
 
 from models import Track, Player
 
@@ -22,6 +23,7 @@ class DataManager:
             ("frosthexEvent", frosthexEvent),
             ("brwc", brwc),
             ("bbrl", bbrl),
+            ("wolfnetwork", wolfnetwork),
             ("boatlabs", boatlabs)
         ]
 

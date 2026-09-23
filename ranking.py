@@ -510,3 +510,8 @@ boatlabs_ranking = RankingSystem(source="boatlabs")
 boatlabs_ranking.export_json(
     "website/data/rankings_boatlabs.json"
 )
+
+wolfnetwork_ranking = RankingSystem(source="wolfnetwork")
+wolfnetwork_ranking.export_json(
+    "website/data/rankings_wolfnetwork.json"
+)
