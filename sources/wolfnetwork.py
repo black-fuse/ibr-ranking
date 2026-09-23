@@ -51,16 +51,28 @@ def username_to_uuid(username):
         f"{BASE_URL}/readonly/players/{quote(username, safe='')}",
         timeout=10
     )
-    response.raise_for_status()
+
+    if not response.ok:
+        print(
+            f"[WolfNetwork] Could not resolve player "
+            f"{username}: HTTP {response.status_code}"
+        )
+        return None
 
     data = response.json()
 
-    uuid = data["uuid"]
+    uuid = data.get("uuid")
+
+    if not uuid:
+        print(
+            f"[WolfNetwork] Could not resolve player "
+            f"{username}: {data}"
+        )
+        return None
 
     _player_cache[key] = uuid
 
     return uuid
-
 
 def make_track_id(track_name):
     digest = hashlib.sha256(
@@ -94,13 +106,15 @@ def get_track(track_name):
     leaderboard = []
 
     for performance in times.get("times", []):
-        # Ignore unfinished runs
         if not performance.get("finished", False):
             continue
 
         uuid = username_to_uuid(
             performance["player_name"]
         )
+
+        if uuid is None:
+            continue
 
         leaderboard.append({
             "player_uuid": uuid,

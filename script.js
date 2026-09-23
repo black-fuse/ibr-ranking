@@ -4,7 +4,9 @@ const boards = {
     brwc: "website/data/rankings_brwc",
     bbrl: "website/data/rankings_bbrl",
     boatlabs: "website/data/rankings_boatlabs",
+    wolfnetwork: "website/data/rankings_wolfnetwork",
     all: "website/data/rankings"
+    
 };
 
 
