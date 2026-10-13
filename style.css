@@ -145,3 +145,70 @@ header h1 {
     background: rgba(7, 17, 31, 0.82);
     z-index: 1;
 }
+
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.support-link {
+    display: inline-block;
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.support-link:hover {
+    opacity: 1;
+}
+
+
+
+.page-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(100px, 1fr)
+        minmax(0, 3fr)
+        minmax(160px, 1fr);
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.rankings-content {
+    min-width: 0;
+}
+
+.sponsor-sidebar,
+.ad-sidebar {
+    min-width: 0;
+}
+
+.ad-sidebar {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .page-layout {
+        display: block;
+    }
+
+    .sponsor-sidebar,
+    .ad-sidebar {
+        display: none;
+    }
+}
+

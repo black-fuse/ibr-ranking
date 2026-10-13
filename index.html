@@ -10,62 +10,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<div class="hero-background">
-    <img src="website/images/wallpapers/2025-05-09_21.57.39_edited.png">
-    <img src="website/images/wallpapers/midgar.png">
-    <img src="website/images/wallpapers/baku.png">
-    <img src="website/images/wallpapers/interlagos.png">
-    <img src="website/images/wallpapers/RainbowRoadABG2021.png">
-</div>
 
-<div class="hero-content">
-    <body>
-
-        <header>
-            <h1>IBR TIERS</h1>
-        </header>
-
-        <!-- Leaderboard selector -->
-        <nav id="board-selector">
-        <button class="board-button" data-board="all">
-            All
-        </button>
-
-        <button class="board-button active" data-board="frosthex">
-            FrostHex
-        </button>
-
-        <button class="board-button" data-board="brwc">
-            BRWC
-        </button>
-
-        <button class="board-button" data-board="bbrl">
-            BBRL
-        </button>
-
-        <button class="board-button" data-board="boatlabs">
-            Boatlabs
-        </button>
-
-        <button class="board-button" data-board="FrosthexEvent">
-            Frosthex Event
-        </button>
-
-        <button class="board-button" data-board="wolfnetwork">
-            wolfnetwork
-        </button>
-    </nav>
-
-        <!-- The currently selected board goes here -->
-        <main id="board-container">
-            Loading...
-        </main>
-
-        <script src="script.js"></script>
-
-    </body>
-</div>
+<body>
+    <div class="hero-background">
+        <img src="website/images/wallpapers/2025-05-09_21.57.39_edited.png">
+        <img src="website/images/wallpapers/midgar.png">
+        <img src="website/images/wallpapers/baku.png">
+        <img src="website/images/wallpapers/interlagos.png">
+        <img src="website/images/wallpapers/RainbowRoadABG2021.png">
+    </div>
 
 
 
+    <div class="hero-content">
+            <header class="site-header">
+                <h1>IBR TIERS</h1>
+
+                <a
+                    class="support-link"
+                    href="https://buymeacoffee.com/Tekad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ☕ Support the project
+                </a>
+            </header>
+
+
+            <div class="page-layout">
+                <aside class="sponsor-sidebar">
+                    <!-- Room for future sponsors -->
+                </aside>
+
+                <div class="rankings-content">
+                    <!-- Leaderboard selector -->
+                    <nav id="board-selector">
+
+                        <button class="board-button" data-board="all">
+                            All
+                        </button>
+
+                        <button class="board-button active" data-board="frosthex">
+                            FrostHex
+                        </button>
+
+                        <button class="board-button" data-board="brwc">
+                            BRWC
+                        </button>
+
+                        <button class="board-button" data-board="bbrl">
+                            BBRL
+                        </button>
+
+                        <button class="board-button" data-board="boatlabs">
+                            Boatlabs
+                        </button>
+
+                        <button class="board-button" data-board="FrosthexEvent">
+                            Frosthex Event
+                        </button>
+
+                        <button class="board-button" data-board="wolfnetwork">
+                            wolfnetwork
+                        </button>
+                    </nav>
+
+
+                    <!-- The currently selected board goes here -->
+                    <main id="board-container">
+                        Loading...
+                    </main>
+                </div>
+                <aside class="ad-sidebar">
+                        <script async
+                            src="https://www.perchads.com/embed.js"
+                            data-space="amdntbkfhp"></script>
+                    </aside>
+        </div>
+
+            <script src="script.js"></script>
+
+    </div>
+</body>
 </html>
