@@ -8,8 +8,10 @@ import sources.bbrl as bbrl
 import sources.boatlabs as boatlabs
 import sources.wolfnetwork as wolfnetwork
 
-from models import Track, Player
+from models import Track, Player, Event
 
+import requests
+from urllib.parse import quote
 from tqdm import tqdm
 
 
@@ -29,9 +31,11 @@ class DataManager:
 
         self.tracks = {}
         self.players = {}
+        self.events = {}
 
         self.failed_tracks = []
         self.failed_players = []
+        self.failed_events = []
 
 
     def load_cache(self):
@@ -82,6 +86,31 @@ class DataManager:
 
             except Exception as e:
                 print(f"[WARN] Failed to load tracks cache: {e}")
+
+
+        # Events
+        if os.path.exists("data/events.json"):
+            try:
+                with open("data/events.json", "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                for internal_id, event_data in data.items():
+                    try:
+                        event = Event.from_dict(event_data)
+                        self.events[event.internal_id] = event
+
+                    except Exception as e:
+                        print(
+                            f"[WARN] Failed to load cached event "
+                            f"{internal_id}: {e}"
+                        )
+
+                print(f"Loaded {len(self.events)} events from cache.")
+
+            except Exception as e:
+                print(f"[WARN] Failed to load events cache: {e}")
+        else:
+            print("No events cache found.")
 
 
     # =========================================================
@@ -279,6 +308,169 @@ class DataManager:
 
 
     # =========================================================
+    # EVENTS
+    # =========================================================
+    def get_event_list(self, source_name, source):
+        """Retrieve the event listing for a supported source."""
+
+        if source_name == "boatlabs":
+            response = requests.get(
+                f"{source.BASE_URL}/getEvents",
+                timeout=30,
+            )
+            response.raise_for_status()
+            data = response.json()
+            return data.get("events", [])
+
+        elif source_name == "wolfnetwork":
+            response = requests.get(
+                f"{source.BASE_URL}/readonly/events",
+                timeout=30,
+            )
+            response.raise_for_status()
+            data = response.json()
+            return data.get("events", [])
+
+        # The other sources are not currently supported for event imports.
+        return []
+
+
+    def get_event_details(self, source_name, source, event_data):
+        """Retrieve the full details for one event."""
+
+        if source_name == "boatlabs":
+            event_name = event_data["name"]
+            url = (
+                f"{source.BASE_URL}/getEvent/"
+                f"{quote(str(event_name), safe='')}"
+            )
+
+        elif source_name == "wolfnetwork":
+            event_name = event_data["name"]
+            url = (
+                f"{source.BASE_URL}/readonly/events/results/"
+                f"{quote(str(event_name), safe='')}"
+            )
+
+        else:
+            raise ValueError(
+                f"Event imports are not supported for {source_name}"
+            )
+
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
+        return response.json()
+
+
+    def load_events(self):
+        """Load new events from supported sources into the event cache."""
+
+        if not hasattr(self, "events"):
+            self.events = {}
+
+        if not hasattr(self, "failed_events"):
+            self.failed_events = []
+
+        for source_name, source in self.sources:
+            print(f"\n--- Loading events from {source_name} ---")
+
+            try:
+                event_list = self.get_event_list(source_name, source)
+
+            except Exception as e:
+                print(
+                    f"[ERROR] Failed to retrieve {source_name} "
+                    f"event list: {e}"
+                )
+
+                self.failed_events.append({
+                    "source": source_name,
+                    "event": None,
+                    "error": str(e),
+                })
+                continue
+
+            print(f"{source_name} currently has {len(event_list)} events.")
+
+            # Use source-prefixed identifiers to avoid collisions between APIs.
+            cached_ids = {
+                event.internal_id
+                for event in self.events.values()
+                if event.source == source_name
+            }
+
+            new_events = []
+
+            for event_data in event_list:
+                event_id = event_data.get("id")
+                event_name = event_data.get("name")
+
+                # Prefer the source ID where available, otherwise use the name.
+                identifier = (
+                    str(event_id)
+                    if event_id is not None
+                    else str(event_name)
+                )
+
+                internal_id = f"{source_name}:{identifier}"
+
+                if internal_id not in cached_ids:
+                    new_events.append(event_data)
+
+            print(f"Cached events: {len(cached_ids)}")
+            print(f"New events: {len(new_events)}")
+
+            if not new_events:
+                print("No new events to load.")
+                continue
+
+            for event_data in tqdm(
+                new_events,
+                desc=f"Loading {source_name} events",
+                unit="event",
+            ):
+                event_name = event_data.get(
+                    "name",
+                    str(event_data.get("id", "unknown")),
+                )
+
+                try:
+                    details = self.get_event_details(
+                        source_name,
+                        source,
+                        event_data,
+                    )
+
+                    # Some APIs may omit their ID in the detailed response.
+                    # Retain the listing's ID if that happens.
+                    if details.get("id") is None and event_data.get("id") is not None:
+                        details["id"] = event_data["id"]
+
+                    if not details.get("name"):
+                        details["name"] = event_name
+
+                    event = Event(details, source_name)
+
+                    self.events[event.internal_id] = event
+                    cached_ids.add(event.internal_id)
+
+                except Exception as e:
+                    print(
+                        f"\n[WARN] Failed to load {source_name} "
+                        f"event {event_name}: {e}"
+                    )
+
+                    self.failed_events.append({
+                        "source": source_name,
+                        "event": event_name,
+                        "error": str(e),
+                    })
+
+        print(f"\nTotal events: {len(self.events)}")
+        print(f"Failed events: {len(self.failed_events)}")
+
+
+    # =========================================================
     # SAVE
     # =========================================================
 
@@ -326,13 +518,29 @@ class DataManager:
             print(f"[ERROR] Failed to save players: {e}")
 
 
+        # Events
+        try:
+            self.save_json(
+                "data/events.json",
+                {
+                    internal_id: event.to_dict()
+                    for internal_id, event in self.events.items()
+                }
+            )
+            print(f"Saved {len(self.events)} events.")
+
+        except Exception as e:
+            print(f"[ERROR] Failed to save events: {e}")
+
+
         # Errors
         try:
             self.save_json(
                 "data/import_errors.json",
                 {
                     "tracks": self.failed_tracks,
-                    "players": self.failed_players
+                    "players": self.failed_players,
+                    "events": self.failed_events
                 }
             )
 
@@ -347,33 +555,26 @@ class DataManager:
     # =========================================================
 
     def update(self):
+        try:
+            print("Loading cached data")
+            self.load_cache()
 
-        print("========================================")
-        print(" Loading cached data")
-        print("========================================")
+            print("Updating tracks")
+            self.load_tracks()
 
-        self.load_cache()
+            print("Updating events")
+            self.load_events()
 
+            print("Updating players")
+            self.load_missing_players()
 
-        print("\n========================================")
-        print(" Updating tracks")
-        print("========================================")
+        except KeyboardInterrupt:
+            print("\n[INFO] Import interrupted. Saving progress...")
 
-        self.load_tracks()
-
-
-        print("\n========================================")
-        print(" Updating players")
-        print("========================================")
-
-        self.load_missing_players()
-
-
-        print("\n========================================")
-        print(" Saving")
-        print("========================================")
-
-        self.save()
+        finally:
+            print("\nSaving data...")
+            self.save()
+            print("Done.")
 
 
     # =========================================================

@@ -15,3 +15,7 @@ data/*.tmp
 data/import_errors.json.bak
 data/players.json.bak
 data/tracks.json.bak
+data/events.json
+data/import_errors.json.bak
+data/players.json.bak
+data/tracks.json.bak

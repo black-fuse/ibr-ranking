@@ -147,3 +147,233 @@ class Track:
         ]
 
         return track
+
+
+class Event:
+    def __init__(self, data, source):
+        self.source = source
+        self.id = data.get("id")
+        self.name = data.get("name") or str(self.id or "unknown")
+        self.internal_id = f"{source}:{self.id if self.id is not None else self.name}"
+
+        self.date = data.get("date", data.get("start_time"))
+        self.state = data.get("state")
+        self.track = data.get("track", data.get("track_name"))
+
+        self.rounds = [
+            Round(round_data, self)
+            for round_data in data.get("rounds", [])
+        ]
+
+    def to_dict(self):
+        return {
+            "source": self.source,
+            "id": self.id,
+            "internal_id": self.internal_id,
+            "name": self.name,
+            "date": self.date,
+            "state": self.state,
+            "track": self.track,
+            "rounds": [round_obj.to_dict() for round_obj in self.rounds],
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        event = cls(data, data["source"])
+        event.rounds = [
+            Round.from_dict(round_data, event)
+            for round_data in data.get("rounds", [])
+        ]
+        return event
+
+
+class Round:
+    def __init__(self, data, event):
+        self.event = event
+        self.name = data.get("name", "Unknown round")
+        self.type = data.get("type")
+        self.state = data.get("state")
+        self.track = data.get("track", data.get("track_name"))
+
+        self.heats = [
+            Heat(heat_data, self)
+            for heat_data in data.get("heats", [])
+        ]
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "type": self.type,
+            "state": self.state,
+            "track": self.track,
+            "heats": [heat.to_dict() for heat in self.heats],
+        }
+
+    @classmethod
+    def from_dict(cls, data, event):
+        round_obj = cls(data, event)
+        round_obj.heats = [
+            Heat.from_dict(heat_data, round_obj)
+            for heat_data in data.get("heats", [])
+        ]
+        return round_obj
+
+
+class Heat:
+    def __init__(self, data, round_obj):
+        self.round = round_obj
+        self.name = data.get("name", data.get("id", "Unknown heat"))
+        self.laps = data.get("laps")
+
+        result_data = (
+            data.get("driver_results")
+            or data.get("driver_details")
+            or data.get("results")
+            or []
+        )
+
+        self.driver_results = [
+            DriverResult(result, self)
+            for result in result_data
+        ]
+
+        self.pits = {
+            result.uuid: result.pits
+            for result in self.driver_results
+            if result.pits
+        }
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "laps": self.laps,
+            "driver_results": [
+                result.to_dict() for result in self.driver_results
+            ],
+            "pits": self.pits,
+        }
+
+    @classmethod
+    def from_dict(cls, data, round_obj):
+        heat = cls(data, round_obj)
+        heat.driver_results = [
+            DriverResult.from_dict(result_data, heat)
+            for result_data in data.get("driver_results", [])
+        ]
+        heat.pits = data.get(
+            "pits",
+            {
+                result.uuid: result.pits
+                for result in heat.driver_results
+                if result.pits
+            },
+        )
+        return heat
+
+
+class DriverResult:
+    def __init__(self, data, heat):
+        self.heat = heat
+        self.uuid = data.get("uuid")
+        self.name = data.get("name", "Unknown")
+
+        self.start_position = data.get("start_position")
+        self.position = data.get("position")
+
+        if "finished" in data:
+            self.finished = data["finished"]
+        elif data.get("finish_time") is not None:
+            self.finished = True
+        elif data.get("dnf") is True:
+            self.finished = False
+        else:
+            self.finished = None
+
+        self.dnf = data.get("dnf")
+
+        self.laps = []
+        for lap_number, lap_data in enumerate(data.get("laps", []), start=1):
+            self.laps.append({
+                "lap_number": lap_number,
+                "time": lap_data.get("time"),
+                "pit_stop": lap_data.get(
+                    "pitStop",
+                    lap_data.get("pitstop", False),
+                ),
+                "fastest": lap_data.get(
+                    "isFastest",
+                    lap_data.get("fastest", False),
+                ),
+            })
+
+        self.pits = [
+            lap["lap_number"]
+            for lap in self.laps
+            if lap["pit_stop"]
+        ]
+
+        fastest_flags = [lap["fastest"] for lap in self.laps]
+        if any(flag is True for flag in fastest_flags):
+            self.fastest = True
+        elif fastest_flags:
+            self.fastest = False
+        else:
+            self.fastest = None
+
+        self.fastest_lap_ms = data.get("fastest_lap_ms")
+
+        raw_time_ms = data.get("total_time_ms")
+        raw_time = data.get("total_time")
+
+        if raw_time_ms is not None:
+            self.total_time_ms = raw_time_ms
+        elif isinstance(raw_time, (int, float)):
+            self.total_time_ms = raw_time
+        else:
+            self.total_time_ms = None
+
+        self.total_time = (
+            raw_time if raw_time is not None else data.get("finish_time")
+        )
+
+        self.laps_completed = (
+            len(self.laps) if self.laps else data.get("laps_completed")
+        )
+
+    def to_dict(self):
+        return {
+            "uuid": self.uuid,
+            "name": self.name,
+            "start_position": self.start_position,
+            "position": self.position,
+            "finished": self.finished,
+            "dnf": self.dnf,
+            "laps": self.laps,
+            "pits": self.pits,
+            "fastest": self.fastest,
+            "fastest_lap_ms": self.fastest_lap_ms,
+            "total_time_ms": self.total_time_ms,
+            "total_time": self.total_time,
+            "laps_completed": self.laps_completed,
+        }
+
+    @classmethod
+    def from_dict(cls, data, heat):
+        result = cls(data, heat)
+
+        # Restore normalized values exactly as saved, rather than
+        # re-deriving them from possibly incomplete lap data.
+        result.pits = data.get("pits", result.pits)
+        result.fastest = data.get("fastest", result.fastest)
+        result.fastest_lap_ms = data.get(
+            "fastest_lap_ms", result.fastest_lap_ms
+        )
+        result.total_time_ms = data.get(
+            "total_time_ms", result.total_time_ms
+        )
+        result.total_time = data.get("total_time", result.total_time)
+        result.laps_completed = data.get(
+            "laps_completed", result.laps_completed
+        )
+
+        return result
