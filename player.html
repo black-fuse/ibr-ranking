@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <title>Player profile | IBR Tiers</title>
+  <link rel="stylesheet" href="player.css">
+  <script src="player.js" defer></script>
+</head>
+<body>
+  <div class="hero-background">
+    <img src="website/images/wallpapers/2025-05-09_21.57.39_edited.png">
+    <img src="website/images/wallpapers/midgar.png">
+    <img src="website/images/wallpapers/baku.png">
+    <img src="website/images/wallpapers/interlagos.png">
+    <img src="website/images/wallpapers/RainbowRoadABG2021.png">
+  </div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="back-link" id="back-link" href="index.html">← Back to Main list</a>
+      <span class="eyebrow">IBR Tiers</span>
+    </header>
+
+    <section id="status" class="status-card" aria-live="polite">
+      <div class="loader" aria-hidden="true"></div>
+      <h1>Loading player profile</h1>
+      <p>Finding this player's leaderboard entry…</p>
+    </section>
+
+    <section id="profile" hidden>
+      <div class="profile-hero panel">
+        <img id="player-avatar" class="avatar" alt="Minecraft player avatar" width="88" height="88">
+        <div class="player-heading">
+          <p class="eyebrow" id="board-label">LEADERBOARD PROFILE</p>
+          <h1 id="player-name">Player</h1>
+          <p class="uuid-line" id="player-uuid"></p>
+          <div class="hero-badges">
+            <span class="badge" id="rank-badge">Rank —</span>
+            <span class="badge badge-muted" id="score-badge">Score —</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <h2>Overview</h2>
+          <p>Statistics from this leaderboard only</p>
+        </div>
+        <div id="overview-stats" class="stats-grid"></div>
+      </section>
+
+      <section class="section-block" id="details-section" hidden>
+        <div class="section-heading">
+          <h2>Performance</h2>
+          <p>Additional results and consistency metrics</p>
+        </div>
+        <div id="detail-stats" class="stats-grid"></div>
+      </section>
+
+      <footer class="profile-footer">
+        <span id="profile-source-note">These statistics reflect the selected leaderboard's current data.</span>
+        <button id="copy-link" class="secondary-button" type="button">Copy profile link</button>
+      </footer>
+    </section>
+
+    <section id="not-found" class="status-card" hidden>
+      <h1>Player not found</h1>
+      <p id="not-found-message">This player could not be found in the selected leaderboard.</p>
+      <a class="primary-link" href="index.html">Return to rankings</a>
+    </section>
+  </main>
+</body>
+</html>

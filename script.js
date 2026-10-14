@@ -1,34 +1,71 @@
+
 const boards = {
-    frosthex: "website/data/rankings_frosthex",
-    FrosthexEvent: "website/data/rankings_frosthexEvent",
-    brwc: "website/data/rankings_brwc",
-    bbrl: "website/data/rankings_bbrl",
-    boatlabs: "website/data/rankings_boatlabs",
-    wolfnetwork: "website/data/rankings_wolfnetwork",
-    all: "website/data/rankings"
-    
+    overall: {
+        type: "paged",
+        path: "website/data/rankings_overall"
+    },
+
+    tt_all: {
+        type: "paged",
+        path: "website/data/rankings_tt_all"
+    },
+    tt_frosthex: {
+        type: "paged",
+        path: "website/data/rankings_tt_frosthex"
+    },
+    tt_frosthexEvent: {
+        type: "paged",
+        path: "website/data/rankings_tt_frosthexEvent"
+    },
+    tt_brwc: {
+        type: "paged",
+        path: "website/data/rankings_tt_brwc"
+    },
+    tt_bbrl: {
+        type: "paged",
+        path: "website/data/rankings_tt_bbrl"
+    },
+    tt_boatlabs: {
+        type: "paged",
+        path: "website/data/rankings_tt_boatlabs"
+    },
+    tt_wolfnetwork: {
+        type: "paged",
+        path: "website/data/rankings_tt_wolfnetwork"
+    },
+
+    events_all: {
+        type: "paged",
+        path: "website/data/rankings_events"
+    },
+    events_boatlabs: {
+        type: "paged",
+        path: "website/data/rankings_events_boatlabs"
+    },
+    events_wolfnetwork: {
+        type: "paged",
+        path: "website/data/rankings_events_wolfnetwork"
+    }
 };
 
 
-const backgrounds = document.querySelectorAll(".hero-background img");
+const backgrounds =
+    document.querySelectorAll(".hero-background img");
 
-let current = 0;
+let currentBackground = 0;
 
 if (backgrounds.length > 0) {
-
-    backgrounds[current].style.opacity = 1;
+    backgrounds[currentBackground].style.opacity = 1;
 
     setInterval(() => {
+        backgrounds[currentBackground].style.opacity = 0;
 
-        backgrounds[current].style.opacity = 0;
+        currentBackground =
+            (currentBackground + 1) % backgrounds.length;
 
-        current = (current + 1) % backgrounds.length;
-
-        backgrounds[current].style.opacity = 1;
-
+        backgrounds[currentBackground].style.opacity = 1;
     }, 8000);
 }
-
 
 
 let currentBoard = null;
@@ -36,48 +73,37 @@ let currentPage = 0;
 let totalPages = 0;
 let loading = false;
 
+// Changes every time a different leaderboard is selected.
+// Prevents old requests from affecting the new leaderboard.
+let boardRequestId = 0;
+
+
+async function fetchJSON(path) {
+    const response = await fetch(path);
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed to load ${path}: HTTP ${response.status}`
+        );
+    }
+
+    return response.json();
+}
 
 
 async function loadRankingIndex(board) {
-
-    const basePath = boards[board];
-
-    const response = await fetch(
-        `${basePath}/index.json`
-    );
-
-    if (!response.ok) {
-        throw new Error(
-            `Failed to load ${basePath}/index.json`
-        );
-    }
-
-    return await response.json();
+    const config = boards[board];
+    return fetchJSON(`${config.path}/index.json`);
 }
-
 
 
 async function loadRankingPage(board, page) {
-
-    const basePath = boards[board];
-
-    const response = await fetch(
-        `${basePath}/page_${page}.json`
-    );
-
-    if (!response.ok) {
-        throw new Error(
-            `Failed to load ${basePath}/page_${page}.json`
-        );
-    }
-
-    return await response.json();
+    const config = boards[board];
+    return fetchJSON(`${config.path}/page_${page}.json`);
 }
 
 
-
-function createPlayerWidget(player) {
-
+function createPlayerWidget(player, boardID) {
     const widget = document.createElement("div");
     widget.className = "player-widget";
 
@@ -86,140 +112,43 @@ function createPlayerWidget(player) {
 
     const skin = document.createElement("img");
     skin.className = "player-skin";
+    skin.alt = `${player.name}'s Minecraft skin`;
+    skin.loading = "lazy";
+    skin.src =
+        "https://mc-heads.net/avatar/" +
+        encodeURIComponent(player.uuid) +
+        "/50";
+
+    // Use the exported rank if present. Otherwise, calculate a tier
+    // from the player's leaderboard position.
+    const position = Number(player.rank);
+    const tier = getTier(
+        Number.isFinite(position) && position > 0 ? position : Infinity
+    );
+
+    rank.textContent = player.rank ?? "—";
+    rank.classList.add(tier);
 
     const name = document.createElement("div");
     name.className = "player-name";
+    name.textContent = player.name ?? player.uuid ?? "Unknown player";
 
     const score = document.createElement("div");
     score.className = "player-score";
+    score.textContent =
+        `${Number(player.score ?? 0).toLocaleString()} points`;
 
-    const tier = getTier(player.rank);
+    widget.append(rank, skin, name, score);
 
-    rank.textContent = player.rank;
-    rank.classList.add(tier);
-
-    name.textContent = player.name;
-
-    score.textContent = `${player.score} points`;
-
-    skin.src =
-        "https://mc-heads.net/avatar/"
-        + player.uuid
-        + "/50";
-
-    widget.appendChild(rank);
-    widget.appendChild(skin);
-    widget.appendChild(name);
-    widget.appendChild(score);
+    widget.addEventListener("click", () => {
+        openPlayerProfile(player, boardID);
+    });
 
     return widget;
 }
 
 
-async function loadNextPage() {
-
-    if (loading) {
-        return;
-    }
-
-    if (currentPage >= totalPages) {
-        return;
-    }
-
-    loading = true;
-
-    try {
-
-        const rankings = await loadRankingPage(
-            currentBoard,
-            currentPage + 1
-        );
-
-        const container =
-            document.getElementById("board-container");
-
-        for (const player of rankings) {
-
-            const widget =
-                createPlayerWidget(player);
-
-            container.appendChild(widget);
-        }
-
-        currentPage++;
-
-    } catch (error) {
-
-        console.error(
-            "Failed to load ranking page:",
-            error
-        );
-
-    } finally {
-
-        loading = false;
-    }
-}
-
-
-async function loadRankings(board) {
-
-    currentBoard = board;
-    currentPage = 0;
-    totalPages = 0;
-
-    const container =
-        document.getElementById("board-container");
-
-    container.innerHTML = "";
-
-    try {
-
-        // Get page information
-        const index =
-            await loadRankingIndex(board);
-
-        totalPages = index.total_pages;
-
-        // Load first page
-        await loadNextPage();
-
-    } catch (error) {
-
-        console.error(
-            "Failed to load rankings:",
-            error
-        );
-
-        container.innerHTML =
-            "<p>Failed to load rankings.</p>";
-    }
-}
-
-// detect when user reaches bottom
-window.addEventListener("scroll", () => {
-
-    const scrollPosition =
-        window.innerHeight + window.scrollY;
-
-    const pageHeight =
-        document.documentElement.scrollHeight;
-
-    // Start loading slightly before the actual bottom
-    const threshold = 500;
-
-    if (
-        scrollPosition >= pageHeight - threshold
-        && !loading
-    ) {
-
-        loadNextPage();
-    }
-});
-
-
 function getTier(rank) {
-
     if (rank <= 20) return "netherite";
     if (rank <= 50) return "diamond";
     if (rank <= 100) return "emerald";
@@ -231,58 +160,178 @@ function getTier(rank) {
 }
 
 
-async function fixPlayerName(player) {
-
-    if (player.name === player.uuid) {
-        player.name =
-            await mojangUuidToUsername(player.uuid);
+function renderPlayers(players, container, boardID) {
+    if (!Array.isArray(players)) {
+        throw new Error("The leaderboard JSON is not an array.");
     }
 
-    return player;
+    const fragment = document.createDocumentFragment();
+
+    for (const player of players) {
+        fragment.appendChild(createPlayerWidget(player, boardID));
+    }
+
+    container.appendChild(fragment);
 }
 
 
-async function mojangUuidToUsername(uuid) {
 
-    const cleanUuid =
-        uuid.replace(/-/g, "");
+async function loadNextPage() {
+    if (loading || !currentBoard) return;
+    if (currentPage >= totalPages) return;
 
-    const response = await fetch(
-        `https://sessionserver.mojang.com/session/minecraft/profile/${cleanUuid}`
-    );
+    const requestId = boardRequestId;
+    const board = currentBoard;
+    const page = currentPage + 1;
 
-    if (!response.ok) {
-        return uuid;
+    loading = true;
+
+    try {
+        const rankings = await loadRankingPage(board, page);
+
+        // Ignore a response if the user switched boards while waiting.
+        if (requestId !== boardRequestId) return;
+
+        const container =
+            document.getElementById("board-container");
+
+        renderPlayers(rankings, container, board);
+        currentPage = page;
+
+    } catch (error) {
+        if (requestId === boardRequestId) {
+            console.error("Failed to load ranking page:", error);
+            showError("Failed to load the next page.");
+        }
+    } finally {
+        if (requestId === boardRequestId) {
+            loading = false;
+        }
+    }
+}
+
+
+function showError(message) {
+    const container =
+        document.getElementById("board-container");
+
+    container.replaceChildren();
+
+    const error = document.createElement("p");
+    error.textContent = message;
+    container.appendChild(error);
+}
+
+
+async function loadRankings(board) {
+    if (!boards[board]) {
+        showError("Unknown leaderboard.");
+        return;
     }
 
-    const data =
-        await response.json();
+    const requestId = ++boardRequestId;
+    const config = boards[board];
 
-    return data.name;
+    currentBoard = board;
+    currentPage = 0;
+    totalPages = 0;
+    loading = false;
+
+    const container =
+        document.getElementById("board-container");
+
+    container.replaceChildren();
+
+    const loadingMessage = document.createElement("p");
+    loadingMessage.textContent = "Loading...";
+    container.appendChild(loadingMessage);
+
+    try {
+        if (config.type === "single") {
+            const rankings = await fetchJSON(config.path);
+
+            if (requestId !== boardRequestId) return;
+
+            container.replaceChildren();
+            renderPlayers(rankings, container);
+            return;
+        }
+
+        const index = await loadRankingIndex(board);
+
+        if (requestId !== boardRequestId) return;
+
+        totalPages = Number(index.total_pages) || 0;
+        container.replaceChildren();
+
+        if (totalPages === 0) {
+            const empty = document.createElement("p");
+            empty.textContent = "No rankings available yet.";
+            container.appendChild(empty);
+            return;
+        }
+
+        await loadNextPage();
+
+    } catch (error) {
+        if (requestId !== boardRequestId) return;
+
+        console.error("Failed to load rankings:", error);
+        showError(
+            "Failed to load rankings. Check that the data files exist."
+        );
+    }
 }
+
+
+// Infinite scroll is only used for paginated leaderboards.
+window.addEventListener("scroll", () => {
+    if (!currentBoard) return;
+    if (boards[currentBoard]?.type !== "paged") return;
+
+    const scrollPosition =
+        window.innerHeight + window.scrollY;
+
+    const pageHeight =
+        document.documentElement.scrollHeight;
+
+    if (scrollPosition >= pageHeight - 500 && !loading) {
+        loadNextPage();
+    }
+});
 
 
 const buttons =
     document.querySelectorAll(".board-button");
 
 buttons.forEach(button => {
-
     button.addEventListener("click", () => {
-
-        buttons.forEach(button => {
-            button.classList.remove("active");
-        });
-
+        buttons.forEach(item => item.classList.remove("active"));
         button.classList.add("active");
 
-        const board =
-            button.dataset.board;
-
-        loadRankings(board);
+        loadRankings(button.dataset.board);
     });
 });
 
+function openPlayerProfile(player, boardId) {
+    if (!player?.uuid) return;
+
+    try {
+        sessionStorage.setItem(
+            `ibr-profile:${boardId}:${player.uuid}`,
+            JSON.stringify(player)
+        );
+    } catch (error) {
+        console.warn("Could not cache profile data:", error);
+    }
+
+    const url = new URL("player.html", window.location.href);
+    url.searchParams.set("board", boardId);
+    url.searchParams.set("uuid", player.uuid);
+
+    window.location.href = url.href;
+}
 
 
-
-loadRankings("all");
+// Start with the combined leaderboard.
+loadRankings("overall");

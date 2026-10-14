@@ -50,35 +50,32 @@
                 <div class="rankings-content">
                     <!-- Leaderboard selector -->
                     <nav id="board-selector">
+                        <div class="board-group">
+                            <span class="board-group-title">Overall</span>
+                            <button class="board-button active" data-board="overall">
+                                Overall
+                            </button>
+                        </div>
 
-                        <button class="board-button" data-board="all">
-                            All
-                        </button>
+                        <div class="board-group">
+                            <span class="board-group-title">Time Trials</span>
+                            <button class="board-button" data-board="tt_all">All Servers</button>
+                            <button class="board-button" data-board="tt_frosthex">FrostHex</button>
+                            <button class="board-button" data-board="tt_brwc">BRWC</button>
+                            <button class="board-button" data-board="tt_bbrl">BBRL</button>
+                            <button class="board-button" data-board="tt_boatlabs">BoatLabs</button>
+                            <button class="board-button" data-board="tt_frosthexEvent">FrostHex Event</button>
+                            <button class="board-button" data-board="tt_wolfnetwork">WolfNetwork</button>
+                        </div>
 
-                        <button class="board-button active" data-board="frosthex">
-                            FrostHex
-                        </button>
-
-                        <button class="board-button" data-board="brwc">
-                            BRWC
-                        </button>
-
-                        <button class="board-button" data-board="bbrl">
-                            BBRL
-                        </button>
-
-                        <button class="board-button" data-board="boatlabs">
-                            Boatlabs
-                        </button>
-
-                        <button class="board-button" data-board="FrosthexEvent">
-                            Frosthex Event
-                        </button>
-
-                        <button class="board-button" data-board="wolfnetwork">
-                            wolfnetwork
-                        </button>
+                        <div class="board-group">
+                            <span class="board-group-title">Events</span>
+                            <button class="board-button" data-board="events_all">All Events</button>
+                            <button class="board-button" data-board="events_boatlabs">BoatLabs</button>
+                            <button class="board-button" data-board="events_wolfnetwork">WolfNetwork</button>
+                        </div>
                     </nav>
+
 
 
                     <!-- The currently selected board goes here -->

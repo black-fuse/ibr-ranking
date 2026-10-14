@@ -212,3 +212,31 @@ header h1 {
     }
 }
 
+
+#board-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.board-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.board-group-title {
+    width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 3px;
+}
+
+.board-button.active {
+    /* Keep your existing active styling if you already have one. */
+    font-weight: bold;
+}
